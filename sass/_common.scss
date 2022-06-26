@@ -1,0 +1,48 @@
+body {
+  background-color: var(--clr--bg);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr--main-dark);
+}
+
+.btn-primary {
+  background-color: var(--clr--main-light);
+  color: var(--clr--white);
+  border: 0;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--clr--point-orange);
+  }
+}
+
+.top-section-img {
+  padding: 6rem 0;
+}
+
+.ccl-hero {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1196px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.text-para-16 {
+  color: var(--clr--main-light);
+}
+
+.text-14 {
+  font-size: 0.875rem;
+}

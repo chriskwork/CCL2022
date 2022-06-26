@@ -1,0 +1,28 @@
+:root {
+  --clr--white: #fff;
+  --clr--bg: #f4f7fb;
+  --clr--main-dark: #161e34;
+  --clr--main-light: #6978a0;
+  --clr--border: #c4c4c4;
+  --clr--point-lime: #35c635;
+  --clr--point-orange: #f5b452;
+
+  --border-radius: 10px;
+  --transition: 200ms;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,24 @@
+.ccl-hero.intro {
+  height: 460px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: center;
+
+  .intro-text {
+    h1 {
+      font-size: 48px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .btn-call-action {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+  }
+
+  .intro-img {
+    width: 90%;
+  }
+}
