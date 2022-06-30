@@ -12,6 +12,10 @@ h6 {
   color: var(--clr--main-dark);
 }
 
+.section-padding {
+  padding: 3rem 0;
+}
+
 .btn-primary {
   background-color: var(--clr--main-light);
   color: var(--clr--white);
@@ -39,10 +43,18 @@ h6 {
   padding: 0 3rem;
 }
 
-.text-para-16 {
+.text-16 {
   color: var(--clr--main-light);
 }
 
 .text-14 {
   font-size: 0.875rem;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.clr--main-light {
+  color: var(--clr--main-light);
 }

@@ -8,13 +8,14 @@
 CONTENTS HERE
 ######################### -->
 
-<!-- intro image -->
+<!-- ########### Intro Section -->
+
 <main>
   <section class="top-section-img">
     <div class="ccl-hero intro container">
       <div class="intro-text">
         <h1>¡BIENVENIDOS!</h1>
-        <p class="text-para-16">
+        <p class="text-16">
           이 사이트는 스페인어를 혼자 공부하시는 분들께 도움을 드리기 위한 목적으로 만들어졌습니다.
         </p>
         <a href="#" class="btn-primary btn-call-action">
@@ -25,156 +26,125 @@ CONTENTS HERE
     </div>
   </section>
 
-
-
-  <!-- 문법 섹션 -->
-  <section class="container mb-5">
-    <h1 class="mb-4"><small class="text-muted">#</small>스페인어 문법</h1>
-
-    <div class="row">
-      <div class="col">
-        <h5>기초문법</h5>
-        <p class="text-muted">꼭 알아야 할 기초문법.</p>
-      </div>
-      <div class="col-4">
-        <a href="/gram-basic" class="btn btn-primary py-2 px-4 w-100 shadow-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <h5>전치사</h5>
-        <p class="text-muted">헷갈리는 전치사 이거면 끝.</p>
-      </div>
-      <div class="col-4">
-        <a href="#" class="btn btn-primary py-2 px-4 w-100 shadow-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-<!-- 테마별 단어 섹션 -->
-  <section class="container" >
-    <h1 class="mb-4"><small class="text-muted">#</small>테마별 단어</h1>
-
-    <p class="text-muted">현재 <span class="text-danger fw-bold">총 30개 테마, 약 2072개</span> 단어가 테마별로 나뉘어서 정리되어 있습니다.</p>
-
-    <div id="tema-image" class="mb-3 rounded-3"></div>
-
-    <a href="#" class="btn btn-primary w-100 shadow-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-    </a>
-  </section>
-
-
-
-</div>
-
-<!-- 다운로드 섹션 -->
-<section id="download" class="container-fluid py-5 mb-5 bg-info">
-
-  <div class="wrapper">
-    <div class="row mb-5">
-      <div class="col">
-        <img id="download-image"src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/download.svg" alt="">
-      </div>
-        
-      <div class="col d-flex flex-column justify-content-center">
-        <h1 class="mb-4"><small class="text-muted">#</small>다운로드</h1>
+  <!-- ########### Cards Section -->
   
-        <p class="text-muted">문법, 전치사, 테마별 단어 등의 모든 자료를 한 눈에 보고, PDF 파일로 다운로드하실 수 있습니다.</p>
+  <section class="cards">
+    <div class="ccl-cards container">
 
-        <a href="#" class="btn btn-outline-light py-2 px-4 w-100 shadow-sm d-none d-xl-block mt-5">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
+      <div class="ccl-card">
+        <div class="ccl-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#161E34" d="M21.17,2.06A13.1,13.1,0,0,0,19,1.87a12.94,12.94,0,0,0-7,2.05,12.94,12.94,0,0,0-7-2,13.1,13.1,0,0,0-2.17.19,1,1,0,0,0-.83,1v12a1,1,0,0,0,1.17,1,10.9,10.9,0,0,1,8.25,1.91l.12.07.11,0a.91.91,0,0,0,.7,0l.11,0,.12-.07A10.9,10.9,0,0,1,20.83,16a1,1,0,0,0,1.17-1v-12A1,1,0,0,0,21.17,2.06ZM11,15.35a12.87,12.87,0,0,0-6-1.48c-.33,0-.66,0-1,0v-10a8.69,8.69,0,0,1,1,0,10.86,10.86,0,0,1,6,1.8Zm9-1.44c-.34,0-.67,0-1,0a12.87,12.87,0,0,0-6,1.48V5.67a10.86,10.86,0,0,1,6-1.8,8.69,8.69,0,0,1,1,0Zm1.17,4.15A13.1,13.1,0,0,0,19,17.87a12.94,12.94,0,0,0-7,2.05,12.94,12.94,0,0,0-7-2.05,13.1,13.1,0,0,0-2.17.19A1,1,0,0,0,2,19.21,1,1,0,0,0,3.17,20a10.9,10.9,0,0,1,8.25,1.91,1,1,0,0,0,1.16,0A10.9,10.9,0,0,1,20.83,20,1,1,0,0,0,22,19.21,1,1,0,0,0,21.17,18.06Z"/></svg>
+        </div>
+        <div class="ccl-card-text">
+          <h3>#스페인어 문법</h3>
+          <p class="text-14 clr--main-light">
+            알쏭달쏭한 스페인어 문법을 최대한 쉽게 설명하기 위해 노력하고 있습니다.
+          </p>
+        </div>
       </div>
+
+      <div class="ccl-card">
+        <div class="ccl-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#161E34" d="M7,16a1,1,0,1,0,1,1A1,1,0,0,0,7,16Zm12.06-4,1.23-1.23a3,3,0,0,0,0-4.24L17.46,3.71a3,3,0,0,0-4.24,0L12,4.94A3,3,0,0,0,9,2H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V15A3,3,0,0,0,19.06,12ZM10,19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V5A1,1,0,0,1,5,4H9a1,1,0,0,1,1,1ZM12,7.76l2.64-2.64a1,1,0,0,1,1.41,0L18.88,8a1,1,0,0,1,0,1.41L16,12.29h0L12,16.24ZM20,19a1,1,0,0,1-1,1H11.82a3.12,3.12,0,0,0,.17-.92L17.07,14H19a1,1,0,0,1,1,1Z"/></svg>
+        </div>
+        <div class="ccl-card-text">
+          <h3>#테마별 단어</h3>
+          <p class="text-14 clr--main-light">
+            현재 총 34개 테마, 약 2174개 단어가 테마별로 나뉘어서 정리되어 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="ccl-card">
+        <div class="ccl-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path fill="#161E34" d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z"/></svg>
+        </div>
+        <div class="ccl-card-text">
+          <h3>#다운로드</h3>
+          <p class="text-14 clr--main-light">
+            모든 자료는 인쇄용 PDF 파일로도 만들어져 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="ccl-card">
+        <div class="ccl-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#161E34" d="M3,12H9a1,1,0,0,0,1-1V5A1,1,0,0,0,9,4H3A1,1,0,0,0,2,5v6A1,1,0,0,0,3,12ZM4,6H8v4H4Zm9,2h8a1,1,0,0,0,0-2H13a1,1,0,0,0,0,2Zm0,10H3a1,1,0,0,0,0,2H13a1,1,0,0,0,0-2Zm8-4H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-4H13a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z"/></svg>
+        </div>
+        <div class="ccl-card-text">
+          <h3>#블로그</h3>
+          <p class="text-14 clr--main-light">
+            스페인 관련 이야기, 일상 등 개인적인 생각을 모아놓은 공간입니다.
+          </p>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <a href="#" class="btn btn-outline-light py-2 px-4 w-100 shadow-sm d-xl-none">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-    </a>
+<!-- ########### 블로그 최신 글 섹션 -->
 
-  </div>
-</section>
+  <section class="blog section-padding">
+    <div class="container">
 
-<!-- 블로그 최신 글 섹션 -->
-<div class="wrapper">
-  <section class="container mb-5">
-    <h1 class="mb-4"><small class="text-muted">#</small>블로그 최신 글</h1>
+      <div class="section-header">
+        <h2>블로그 최신 글</h2>
+        <a class="link-underline" href="#">글 더보기 &raquo;</a>
+      </div>
 
-    <!-- 블로그 최근 글 3개 불러오기 -->
-    <div class="d-flex flex-column gap-3 flex-lg-row ">
+      <div class="blog-wrapper">
+        <!-- 블로그 최근 글 3개 불러오기 -->
+        <?php
+  
+          $homepagePosts = new WP_Query(array(
+            'posts_per_page' => 3
+          ));
+  
+          while($homepagePosts -> have_posts()){
+            $homepagePosts -> the_post(); ?>
+  
+              <div class="blog-card">
+
+                <div class="blog-card-thumb-img">
+                  <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
+                </div>
+
+                <div class="blog-card-data">
+                  <h4>
+                    <a href="<?php the_permalink(); ?>">
+                      <?php echo wp_trim_words(get_the_title(), 5); ?>
+                    </a>
+                  </h4>
+                  <p class="blog-card-date"><?php the_time('Y. m. j'); ?></p>
+                  <p class="blog-card-post clr--main-light">
+                    <?php echo wp_trim_words(get_the_content(), 20); ?>
+                  </p>
     
-      <?php
+                  <div class="blog-card-more-box">
+                    <p class="blog-card-category text-12">
+                      <?php echo get_the_category_list(' '); ?>
+                    </p>
+                    <a href="<?php the_permalink(); ?>" class="blog-card-read-more text-14">계속 읽기</a>
+                  </div>
 
-        $homepagePosts = new WP_Query(array(
-          'posts_per_page' => 3
-        ));
-
-        while($homepagePosts -> have_posts()){
-          $homepagePosts -> the_post(); ?>
-
-          <div class="card w-100">
-
-            <div id="blog-thumbnail-img" class="card-img-top">
-              <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
-            </div>
-              
-            <div class="card-body">
-
-              <h4 class="card-title">
-                <a class="text-decoration-none" href="<?php the_permalink(); ?>">
-                  <?php echo wp_trim_words(get_the_title(), 5); ?>
-                </a>
-              </h4>
-
-              <p class="card-text text-end">
-                <small class="text-gray"><?php the_time('Y. m. j'); ?></small>
-              </p>
-
-              <p class="card-text text-muted">
-                <?php echo wp_trim_words(get_the_content(), 20); ?>
-              </p>
-
-              
-              <div class="row">
-                <div class="col d-flex align-items-center">
-                  <span class="blog-tag ">
-                    <?php echo get_the_category_list(' '); ?>
-                  </span>
                 </div>
-                <div class="col d-flex align-items-center justify-content-end">
-                  <a href="<?php the_permalink(); ?>" class="btn btn-primary shadow-sm w-100 text-white">
-                    <small>계속 읽기 &nbsp;&raquo;</small>
-                  </a>  
-                </div>
-  
+
+
               </div>
-            </div>
-
-          </div>
-
-      <?php  
-        }
-        wp_reset_postdata();
-      ?>
+            
+  
+          <?php  
+          }
+          wp_reset_postdata();
+        ?>
+  
+      </div>
     </div>
 
-    <div class="dots-container">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
 
-    <a href="<?php echo site_url('/blog'); ?>" class="d-block text-decoration-none text-center mt-3 py-2 text-muted">
-      블로그 글 더보기 &nbsp;&raquo;
-    </a>
-    
   </section>
-</div>
+
+
 
 <!-- 카페콘레체는.. (About) -->
 <div class="wrapper">
