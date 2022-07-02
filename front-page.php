@@ -18,7 +18,7 @@ CONTENTS HERE
         <p class="text-16">
           이 사이트는 스페인어를 혼자 공부하시는 분들께 도움을 드리기 위한 목적으로 만들어졌습니다.
         </p>
-        <a href="#" class="btn-primary btn-call-action">
+        <a href="<?php echo get_home_url(); ?>/grammars/" class="btn-primary btn-call-action">
           문법 공부 시작하기
         </a>
       </div>
@@ -89,7 +89,7 @@ CONTENTS HERE
 
       <div class="section-header">
         <h2>블로그 최신 글</h2>
-        <a class="link-underline" href="#">글 더보기 &raquo;</a>
+        <a class="link-underline" href="<?php echo get_home_url(); ?>/blog">글 더보기 &raquo;</a>
       </div>
 
       <div class="blog-wrapper">
@@ -140,30 +140,27 @@ CONTENTS HERE
   
       </div>
     </div>
-
-
   </section>
-
 
 
 <!-- 카페콘레체는.. (About) -->
-<div class="wrapper">
-  <section class="container mb-5">
-    <h1 class="mb-4"><small class="text-muted">#</small>카페콘레체는..</h1>
 
-    <p class="text-muted">
-      서른이 넘어 시작한 스페인어는 너무나도 어려웠습니다. 인터넷에 스페인어 공부와 관련된 자료도 은근히 많지 않았기 때문에, '내가 공부한 것들을 정리해서 스페인어를 공부하려는 다른 분들과 공유해야겠다'라는 마음으로 시작하게 되었습니다.<br />
-      도움이 되셨다면, 커피 한 잔 사주실래요? ☕
-    </p>
+  <section class="about section-padding">
+    <div class="container">
+      <h2 class="section-header">#카페콘레체는..</h2>
+      <p class="text-14 clr--main-light">
+        서른이 넘어 시작한 스페인어는 너무나도 어려웠습니다. 인터넷에 스페인어 공부와 관련된 자료도 은근히 많지 않았기 때문에, '내가 공부한 것들을 정리해서 스페인어를 공부하려는 다른 분들과 공유해야겠다'라는 마음으로 시작하게 되었습니다.<br />
+        도움이 되셨다면, 커피 한 잔 쏴주십쇼! ☕
+      </p>
 
-    <a href="https://www.buymeacoffee.com/cafeconleche" target="_blank">
-      <img class="buymeacoffee-banner" src="<?php echo get_template_directory_uri(); ?>/assets/images/violet-button.png" alt="">
+      <a href="https://www.buymeacoffee.com/cafeconleche" target="_blank">
+        <img class="buymeacoffee-banner" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/orange-button.png" alt="">
     </a>
+    </div>
   </section>
-</div>
 
-      </main>
+</main>
 
+<!-- footer -->
 
-      <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 <?php get_footer(); ?>

@@ -46,6 +46,10 @@ h6 {
   padding: 3rem 0;
 }
 
+.body-padding {
+  padding: 6rem 0;
+}
+
 .btn-primary {
   background-color: var(--clr--main-light);
   color: var(--clr--white);
@@ -96,6 +100,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
 }
 
 nav {
@@ -414,4 +420,39 @@ section.cards {
 .blog-wrapper .blog-card-read-more:hover {
   background-color: var(--clr--point-orange);
   color: var(--clr--main-dark);
+}
+
+.buymeacoffee-banner {
+  margin-top: 1.5rem;
+  width: 200px;
+}
+
+footer {
+  background-color: #111;
+  color: #bebebe;
+  text-align: center;
+}
+
+footer .social-media-links {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+footer .social-media-links a {
+  color: var(--clr--main-light);
+  text-transform: uppercase;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+footer .social-media-links a:nth-child(2) {
+  margin: 0 1rem;
+}
+
+footer .social-media-links a:hover {
+  color: #fff;
+}
+
+.blog-index {
+  padding: 10rem 0;
 }

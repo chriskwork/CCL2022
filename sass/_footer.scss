@@ -1,0 +1,24 @@
+footer {
+  background-color: #111;
+  color: #bebebe;
+  text-align: center;
+
+  .social-media-links {
+    margin-bottom: 1rem;
+    font-size: 14px;
+
+    a {
+      color: var(--clr--main-light);
+      text-transform: uppercase;
+      transition: var(--transition);
+
+      &:nth-child(2) {
+        margin: 0 1rem;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
