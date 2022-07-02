@@ -33,10 +33,10 @@
 
         <div class="links">
           <ul>
-            <li><a href="#" class="nav-link text-14">스페인어 문법</a></li>
-            <li><a href="#" class="nav-link text-14">테마별 단어</a></li>
-            <li><a href="#" class="nav-link text-14">다운로드</a></li>
-            <li><a href="#" class="nav-link text-14">블로그</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/grammars" class="nav-link text-14">스페인어 문법</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/vocabulary" class="nav-link text-14">테마별 단어</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/downloads" class="nav-link text-14">다운로드</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link text-14">블로그</a></li>
           </ul>
 
           <div>

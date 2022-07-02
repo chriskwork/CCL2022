@@ -1,42 +1,23 @@
-<!-- single post -->
 
 <?php get_header(); ?>
 
-<div class="blog-index container body-padding">
+<div class="blog-index">
 
-  <article>
-  <?php 
-    if(have_posts()){
-      while(have_posts()){
-        the_post(); ?>
-        
-        <div>
-          <h2>
-            <a href="<?php the_permalink(); ?>">
-              <?php the_title(); ?>
-            </a>
-          </h2>
+  <div class="container">
+    <?php 
+      if(have_posts()){
+        while(have_posts()){
+          the_post();
+          
+          get_template_part('template-parts/content', 'archive');
+        }
+      }
+    ?>
 
-          <div>
-            <p>작성자: 
-              <span><?php the_author_posts_link(); ?></span>,
-              <span><?php the_time('Y-n-j'); ?></span>,
-              태그:
-              <span><?php echo get_the_category(); ?></span>
-            </p>
-          </div>
-
-          <div>
-            <?php the_excerpt(); ?>
-            <p><a href="<?php the_permalink(); ?>">계속 읽기 &raquo;</a></p>
-          </div>
-        </div>
-        
-      <?php }
-      echo paginate_links();
-    }
-  ?>
-  </article>
+    <!-- 포스트 페이지네이션 -->
+    <?php the_posts_pagination(); ?>
+    
+  </div>
 
 </div>
 
