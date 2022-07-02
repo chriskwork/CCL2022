@@ -1,21 +1,19 @@
-<div class="">
+<div class="blog-article-wrapper">
 
-  <div class="article-header mb-4">
+  <div class="blog-article">
     <h1><?php the_title(); ?></h1>
     
-    <div class="text-muted blog-meta-data">
-      <?php the_tags(''); ?>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <?php the_date(); ?>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <?php comments_number(); ?>
+    <div class="blog-meta-data">
+      <span><?php the_tags(''); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span><?php the_date(); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span><?php comments_number(); ?></span>
+    </div>
+
+    <div class="blog-content">
+      <?php the_content(); ?>
     </div>
   </div>
 
-  <?php the_content(); ?>
-
-  <br />
-  <hr />
-  <br />
-
-  <?php comments_template(); ?>
   
+
 </div>

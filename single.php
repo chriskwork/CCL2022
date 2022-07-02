@@ -2,9 +2,9 @@
 
 <?php get_header(); ?>
 
-<div class="wrapper">
+<div class="blog-index">
 
-  <div class="container mt-5 pt-5">
+  <div class="container">
     
     <article>
     <?php 
@@ -18,15 +18,27 @@
     ?>
     </article>
   
+    <br />
+    <hr />
+    <br />
+    <!-- 사이드바 -->
+  
+    <div class="blog-side-bar">
+      <?php dynamic_sidebar('sidebar-1'); ?>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+    
+    <!-- Comments -->
+    <div class="blog-comments">
+      <?php comments_template(); ?>
+    </div>
+
   </div>
 
 
-
-  <!-- 사이드바 -->
-  <div class="container">
-    <?php dynamic_sidebar('sidebar-1'); ?>
-
-  </div>
 </div>
 
 
