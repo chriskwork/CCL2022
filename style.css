@@ -792,6 +792,10 @@ hr {
   margin: 5rem 0;
 }
 
+.page-content {
+  min-height: calc(100vh - 232px);
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,6 +810,7 @@ hr {
   height: 240px;
   background-position: center bottom;
   background-attachment: fixed;
+  margin-bottom: 2rem;
 }
 
 .page-header-title {
@@ -813,21 +818,50 @@ hr {
 }
 
 .page-header.zaragoza {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("./assets/images/pages/ccl-zaragoza.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)), url("./assets/images/pages/ccl-zaragoza.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("./assets/images/pages/ccl-zaragoza.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), url("./assets/images/pages/ccl-zaragoza.jpg");
 }
 
 .page-header.toledo {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("./assets/images/pages/ccl-toledo.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)), url("./assets/images/pages/ccl-toledo.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("./assets/images/pages/ccl-toledo.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), url("./assets/images/pages/ccl-toledo.jpg");
 }
 
 .page-header.segovia {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("./assets/images/pages/ccl-segovia.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)), url("./assets/images/pages/ccl-segovia.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("./assets/images/pages/ccl-segovia.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), url("./assets/images/pages/ccl-segovia.jpg");
 }
 
 .page-header.salchicon {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("./assets/images/pages/ccl-salchicon.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)), url("./assets/images/pages/ccl-salchicon.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("./assets/images/pages/ccl-salchicon.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), url("./assets/images/pages/ccl-salchicon.jpg");
+}
+
+#tema-voca-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#tema-voca-list a {
+  color: var(--clr--main-light);
+}
+
+.btn-tema-voca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 80px;
+  border: 1px solid var(--clr--border);
+  padding: 10px 20px;
+  border-radius: 6px;
 }

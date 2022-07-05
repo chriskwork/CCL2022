@@ -1,5 +1,11 @@
+// Common styles
+
 .page-padding {
   margin: 5rem 0;
+}
+
+.page-content {
+  min-height: calc(100vh - 232px);
 }
 
 .page-header {
@@ -10,28 +16,49 @@
   height: 240px;
   background-position: center bottom;
   background-attachment: fixed;
+  margin-bottom: 2rem;
 
   &-title {
     color: #fff;
   }
 
   &.zaragoza {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)),
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),
       url('./assets/images/pages/ccl-zaragoza.jpg');
   }
 
   &.toledo {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)),
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),
       url('./assets/images/pages/ccl-toledo.jpg');
   }
 
   &.segovia {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)),
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),
       url('./assets/images/pages/ccl-segovia.jpg');
   }
 
   &.salchicon {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75)),
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),
       url('./assets/images/pages/ccl-salchicon.jpg');
   }
+}
+
+// Tema Voca Styles
+
+#tema-voca-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#tema-voca-list a {
+  color: var(--clr--main-light);
+}
+.btn-tema-voca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  border: 1px solid var(--clr--border);
+  padding: 10px 20px;
+  border-radius: 6px;
 }
