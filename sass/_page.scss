@@ -50,9 +50,16 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+
 #tema-voca-list a {
   color: var(--clr--main-light);
+
+  &:hover {
+    color: var(--clr--main-dark);
+  }
 }
+
+// tema list page buttons (tema index page)
 .btn-tema-voca {
   display: flex;
   justify-content: center;
@@ -61,4 +68,40 @@
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;
+  transition: var(--transition);
+
+  &:hover {
+    border-color: var(--clr--main-dark);
+  }
+}
+
+// individual tema words page (table)
+.tema-voca-words {
+  color: var(--clr--main-light);
+  width: 100%;
+  padding-top: 1rem;
+
+  tr:nth-child(even) {
+    background-color: var(--clr--table-bg);
+  }
+
+  td {
+    padding: 10px;
+  }
+}
+
+.btn-go-back-to-list {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--clr--main-light);
+  margin-top: 2rem;
+  padding: 10px;
+  transition: var(--transition);
+  border: 1px solid var(--clr--border);
+  border-radius: 4px;
+
+  &:hover {
+    color: var(--clr--main-dark);
+    border-color: var(--clr--main-dark);
+  }
 }

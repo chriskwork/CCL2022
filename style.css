@@ -8,6 +8,7 @@
   --clr--grey: #a7a7a7;
   --clr--point-lime: #35c635;
   --clr--point-orange: #f5b452;
+  --clr--table-bg: #f1f1f1;
   --border-radius: 10px;
   --transition: 200ms;
 }
@@ -32,6 +33,7 @@ li {
 body {
   background-color: var(--clr--bg);
   line-height: 1.4;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h1,
@@ -77,6 +79,11 @@ h6 {
   max-width: 1196px;
   margin: 0 auto;
   padding: 0 3rem;
+}
+
+.spanish {
+  font-family: 'Lato', sans-serif;
+  color: var(--clr--main-dark);
 }
 
 .text-16 {
@@ -850,6 +857,10 @@ hr {
   color: var(--clr--main-light);
 }
 
+#tema-voca-list a:hover {
+  color: var(--clr--main-dark);
+}
+
 .btn-tema-voca {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,4 +875,41 @@ hr {
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.btn-tema-voca:hover {
+  border-color: var(--clr--main-dark);
+}
+
+.tema-voca-words {
+  color: var(--clr--main-light);
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.tema-voca-words tr:nth-child(even) {
+  background-color: var(--clr--table-bg);
+}
+
+.tema-voca-words td {
+  padding: 10px;
+}
+
+.btn-go-back-to-list {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--clr--main-light);
+  margin-top: 2rem;
+  padding: 10px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border: 1px solid var(--clr--border);
+  border-radius: 4px;
+}
+
+.btn-go-back-to-list:hover {
+  color: var(--clr--main-dark);
+  border-color: var(--clr--main-dark);
 }
