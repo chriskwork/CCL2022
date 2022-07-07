@@ -105,3 +105,25 @@
     border-color: var(--clr--main-dark);
   }
 }
+
+// DOWNLOADS PAGE
+
+.dl-section:not(last-child) {
+  margin-bottom: 1rem;
+}
+
+#downloads {
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    padding: 4px;
+    margin-left: 1rem;
+  }
+
+  a.dl-link:hover {
+    color: var(--clr--main-dark);
+    text-decoration: underline;
+  }
+}

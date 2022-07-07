@@ -22,14 +22,6 @@
           box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 body {
   background-color: var(--clr--bg);
   line-height: 1.4;
@@ -43,6 +35,17 @@ h4,
 h5,
 h6 {
   color: var(--clr--main-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr--main-light);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+li {
+  list-style: none;
 }
 
 .section-padding {
@@ -912,4 +915,22 @@ hr {
 .btn-go-back-to-list:hover {
   color: var(--clr--main-dark);
   border-color: var(--clr--main-dark);
+}
+
+.dl-section:not(last-child) {
+  margin-bottom: 1rem;
+}
+
+#downloads h4 {
+  margin-bottom: 1rem;
+}
+
+#downloads ul li {
+  padding: 4px;
+  margin-left: 1rem;
+}
+
+#downloads a.dl-link:hover {
+  color: var(--clr--main-dark);
+  text-decoration: underline;
 }

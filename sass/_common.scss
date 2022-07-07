@@ -13,6 +13,16 @@ h6 {
   color: var(--clr--main-dark);
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr--main-light);
+  transition: var(--transition);
+}
+
+li {
+  list-style: none;
+}
+
 .section-padding {
   padding: 3rem 0;
 }
