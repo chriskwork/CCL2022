@@ -43,12 +43,12 @@
   }
 }
 
-// Tema Voca Styles
+// Tema Voca Index Buttons Styles
 
 #tema-voca-list {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  // gap: 10px;
 }
 
 #tema-voca-list a {
@@ -59,12 +59,23 @@
   }
 }
 
+// tema table (inserted in individual page)
+.tema-table {
+  padding-top: 3rem;
+
+  td {
+    padding: 2px 0;
+  }
+}
+
 // tema list page buttons (tema index page)
 .btn-tema-voca {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 80px;
+  max-width: 160px;
+  margin-top: 2rem;
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;

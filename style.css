@@ -848,12 +848,10 @@ hr {
 }
 
 #tema-voca-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
 
 #tema-voca-list a {
@@ -862,6 +860,14 @@ hr {
 
 #tema-voca-list a:hover {
   color: var(--clr--main-dark);
+}
+
+.tema-table {
+  padding-top: 3rem;
+}
+
+.tema-table td {
+  padding: 2px 0;
 }
 
 .btn-tema-voca {
@@ -875,6 +881,8 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   min-width: 80px;
+  max-width: 160px;
+  margin-top: 2rem;
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;

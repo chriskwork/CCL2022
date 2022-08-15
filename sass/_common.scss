@@ -2,6 +2,10 @@ body {
   background-color: var(--clr--bg);
   line-height: 1.4;
   font-family: 'Noto Sans', sans-serif;
+
+  // @media (max-width: $tablet) {
+  //   display: none;
+  // }
 }
 
 h1,
