@@ -848,10 +848,12 @@ hr {
 }
 
 #tema-voca-list {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
 }
 
 #tema-voca-list a {
@@ -882,7 +884,6 @@ hr {
           align-items: center;
   min-width: 80px;
   max-width: 160px;
-  margin-top: 2rem;
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;
@@ -892,6 +893,7 @@ hr {
 
 .btn-tema-voca:hover {
   border-color: var(--clr--main-dark);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .tema-voca-words {
@@ -918,6 +920,7 @@ hr {
   transition: var(--transition);
   border: 1px solid var(--clr--border);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-go-back-to-list:hover {
@@ -941,4 +944,61 @@ hr {
 #downloads a.dl-link:hover {
   color: var(--clr--main-dark);
   text-decoration: underline;
+}
+
+#grammars ol {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#grammars ol li {
+  margin-bottom: 10px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+#grammars ol li:hover {
+  color: var(--clr--main-dark);
+}
+
+#grammars hr {
+  margin: 2rem 0;
+}
+
+.docu-container {
+  padding: 3rem 0;
+}
+
+.docu-container .docu-block {
+  line-height: 1.4;
+}
+
+.docu-container .docu-block .content-title {
+  margin-bottom: 6px;
+}
+
+.docu-container .docu-block .content-header {
+  margin-bottom: 14px;
+}
+
+.docu-container .docu-block .content-text {
+  font-size: 0.9rem;
+}
+
+.docu-container .docu-block .content-tip {
+  margin-top: 14px;
+  font-size: 0.8rem;
+  color: var(--clr--main-light);
+}
+
+.docu-container .docu-block .content-tip-header {
+  margin-bottom: 6px;
+}
+
+.docu-container hr {
+  margin: 2rem 0;
+  width: 80%;
+  max-width: 800px;
+  min-width: 300px;
 }
