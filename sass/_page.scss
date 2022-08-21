@@ -152,7 +152,7 @@
     width: max-content;
 
     li {
-      margin-bottom: 10px;
+      margin: 0 0 10px 1rem;
       transition: var(--transition);
 
       &:hover {
@@ -172,6 +172,7 @@
 .docu-container {
   padding: 3rem 0;
 
+  // 전치사 개별 페이지
   .docu-block {
     line-height: 1.4;
 
@@ -203,5 +204,34 @@
     width: 80%;
     max-width: 800px;
     min-width: 300px;
+  }
+
+  // 기초문법 시리즈 개별 페이지
+  .basic-gramm {
+    line-height: 1.6;
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      color: var(--clr--main-light);
+    }
+
+    span {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    span.exception {
+      color: var(--clr--main-light);
+      margin-top: 6px;
+    }
+
+    span.grey-example {
+      background-color: var(--clr--bg-grey);
+      padding: 10px;
+      margin: 10px 0;
+    }
   }
 }

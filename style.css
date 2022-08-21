@@ -6,6 +6,7 @@
   --clr--main-light: #6978a0;
   --clr--border: #c4c4c4;
   --clr--grey: #a7a7a7;
+  --clr--bg-grey: #e7e7e7;
   --clr--point-lime: #35c635;
   --clr--point-orange: #f5b452;
   --clr--table-bg: #f1f1f1;
@@ -953,7 +954,7 @@ hr {
 }
 
 #grammars ol li {
-  margin-bottom: 10px;
+  margin: 0 0 10px 1rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -1001,4 +1002,32 @@ hr {
   width: 80%;
   max-width: 800px;
   min-width: 300px;
+}
+
+.docu-container .basic-gramm {
+  line-height: 1.6;
+}
+
+.docu-container .basic-gramm p {
+  margin-bottom: 2rem;
+}
+
+.docu-container .basic-gramm h3 {
+  color: var(--clr--main-light);
+}
+
+.docu-container .basic-gramm span {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.docu-container .basic-gramm span.exception {
+  color: var(--clr--main-light);
+  margin-top: 6px;
+}
+
+.docu-container .basic-gramm span.grey-example {
+  background-color: var(--clr--bg-grey);
+  padding: 10px;
+  margin: 10px 0;
 }
