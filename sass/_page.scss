@@ -233,5 +233,19 @@
       padding: 10px;
       margin: 10px 0;
     }
+
+    table {
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      table-layout: fixed;
+
+      th,
+      td {
+        border: 1px solid var(--clr--border);
+        padding: 4px 10px;
+      }
+    }
   }
 }

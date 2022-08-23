@@ -1031,3 +1031,17 @@ hr {
   padding: 10px;
   margin: 10px 0;
 }
+
+.docu-container .basic-gramm table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  table-layout: fixed;
+}
+
+.docu-container .basic-gramm table th,
+.docu-container .basic-gramm table td {
+  border: 1px solid var(--clr--border);
+  padding: 4px 10px;
+}
