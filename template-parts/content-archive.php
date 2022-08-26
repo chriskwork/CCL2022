@@ -1,6 +1,8 @@
 <article class="blog-article-box">
 
+<a class="blog-thumb-img-link" href="<?php the_permalink(); ?>">  
   <img class="blog-thumb-img" src="<?php the_post_thumbnail_url('medium'); ?>" alt="블로그 포스트 이미지" />
+</a>
 
   <div class="blog-post">
     <h2 class="blog-title">
@@ -17,8 +19,10 @@
   
     <div class="blog-excerpt">
       <?php the_excerpt(); ?>
-      <span> &raquo; </span>
-      <a href="<?php the_permalink(); ?>" class="blog-read-more-btn">계속 읽기</a>
+      <div class="blog-read-more-btn-box">
+        <span> &raquo; </span>
+        <a href="<?php the_permalink(); ?>" class="blog-read-more-btn">계속 읽기</a>
+      </div>
     </div>
   </div>
 

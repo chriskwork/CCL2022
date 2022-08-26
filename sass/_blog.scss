@@ -1,7 +1,8 @@
 // Blog Common Style
 
 .blog-index {
-  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .blog-meta-data {
@@ -17,28 +18,46 @@
 // Blog Index Post Thumbnail Style
 
 .blog-article-box {
+  width: 100%;
   margin-bottom: 2rem;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  gap: 1rem;
 
-  &:hover .blog-thumb-img {
-    filter: brightness(100%);
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+
+  .blog-thumb-img-link {
+    min-width: 200px;
+    flex: 1;
   }
 
   .blog-thumb-img {
-    margin-right: 1rem;
     filter: brightness(96%);
     transition: var(--transition);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &:hover {
+      filter: brightness(100%);
+    }
   }
 
   .blog-post {
     display: flex;
     flex-direction: column;
+    flex: 3;
 
     .blog-title {
       font-size: 1.25rem;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
+
+      @media screen and (max-width: $mobile) {
+        margin: 1rem 0 1rem 0;
+      }
     }
 
     .blog-title a {
@@ -57,11 +76,15 @@
         display: inline-block;
       }
 
+      .blog-read-more-btn-box {
+        margin-top: 10px;
+      }
+
       .blog-read-more-btn {
         font-size: 14px;
-        // background-color: var(--clr--point-lime);
+        font-weight: 600;
+        margin-top: 10px;
         color: var(--clr--point-lime);
-        // padding: 2px 4px;
         text-decoration: underline;
       }
     }
@@ -98,7 +121,6 @@ nav.pagination {
 
 .blog-article-wrapper {
   max-width: 680px;
-  min-width: 420px;
   margin: 0 auto;
 }
 
@@ -137,9 +159,16 @@ nav.pagination {
 
 hr {
   border-color: var(--clr--border);
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 // Comments Style -- Comments
+
+.blog-comments {
+  max-width: 680px;
+  margin: 0 auto;
+}
 
 .comments-body {
   .comment {
@@ -258,7 +287,12 @@ hr {
 // Side Bar Style
 
 .blog-side-bar {
-  margin: 3rem 0;
+  margin: 3rem auto;
+  max-width: 680px;
+
+  .wp-block-group {
+    margin-bottom: 2rem;
+  }
 
   h2 {
     color: var(--clr--main-dark);
@@ -281,6 +315,8 @@ hr {
   }
 
   .wp-block-latest-posts li {
+    padding: 4px 0;
+
     a {
       color: var(--clr--main-light);
       transition: var(--transition);
@@ -296,6 +332,8 @@ hr {
   }
 
   .wp-block-archives li {
+    padding: 4px 0;
+
     a {
       color: var(--clr--main-light);
       transition: var(--transition);
@@ -312,5 +350,9 @@ hr {
 
   .wp-block-latest-posts {
     margin-bottom: 2rem;
+  }
+
+  .wp-block-categories li {
+    padding: 4px 0;
   }
 }

@@ -1,9 +1,12 @@
 
 <?php get_header(); ?>
 
-<div class="blog-index">
+
+  <div class="blog-index post-padding">
 
   <div class="container">
+
+    
     <?php 
       if(have_posts()){
         while(have_posts()){
@@ -17,9 +20,9 @@
     <!-- 포스트 페이지네이션 -->
     <?php the_posts_pagination(); ?>
     
+  
   </div>
-
-</div>
+  </div>
 
 
 <?php get_footer(); ?>

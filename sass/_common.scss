@@ -50,8 +50,15 @@ li {
   padding: 3rem 0;
 }
 
-.body-padding {
-  padding: 6rem 0;
+.body-padding,
+.post-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.blog-padding {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .btn-primary {
@@ -78,7 +85,8 @@ li {
   position: relative;
   max-width: 1196px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
   @media screen and (max-width: $mobile) {
     padding: 0 1rem;

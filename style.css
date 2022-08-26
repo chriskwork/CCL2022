@@ -72,8 +72,15 @@ li {
   padding: 3rem 0;
 }
 
-.body-padding {
-  padding: 6rem 0;
+.body-padding,
+.post-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.blog-padding {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .btn-primary {
@@ -99,7 +106,8 @@ li {
   position: relative;
   max-width: 1196px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -490,7 +498,8 @@ footer .social-media-links a:hover {
 }
 
 .blog-index {
-  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .blog-meta-data {
@@ -504,26 +513,46 @@ footer .social-media-links a:hover {
 }
 
 .blog-article-box {
+  width: 100%;
   margin-bottom: 2rem;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  gap: 1rem;
 }
-.blog-article-box:hover .blog-thumb-img {
-  filter: brightness(100%);
+@media screen and (max-width: 576px) {
+  .blog-article-box {
+    flex-direction: column;
+  }
+}
+.blog-article-box .blog-thumb-img-link {
+  min-width: 200px;
+  flex: 1;
 }
 .blog-article-box .blog-thumb-img {
-  margin-right: 1rem;
   filter: brightness(96%);
   transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-article-box .blog-thumb-img:hover {
+  filter: brightness(100%);
 }
 .blog-article-box .blog-post {
   display: flex;
   flex-direction: column;
+  flex: 3;
 }
 .blog-article-box .blog-post .blog-title {
   font-size: 1.25rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .blog-article-box .blog-post .blog-title {
+    margin: 1rem 0 1rem 0;
+  }
 }
 .blog-article-box .blog-post .blog-title a {
   color: var(--clr--main-dark);
@@ -538,8 +567,13 @@ footer .social-media-links a:hover {
 .blog-article-box .blog-post .blog-excerpt p {
   display: inline-block;
 }
+.blog-article-box .blog-post .blog-excerpt .blog-read-more-btn-box {
+  margin-top: 10px;
+}
 .blog-article-box .blog-post .blog-excerpt .blog-read-more-btn {
   font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
   color: var(--clr--point-lime);
   text-decoration: underline;
 }
@@ -565,7 +599,6 @@ nav.pagination .nav-links .page-numbers.current {
 
 .blog-article-wrapper {
   max-width: 680px;
-  min-width: 420px;
   margin: 0 auto;
 }
 
@@ -598,6 +631,13 @@ nav.pagination .nav-links .page-numbers.current {
 
 hr {
   border-color: var(--clr--border);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.blog-comments {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .comments-body .comment {
@@ -693,7 +733,11 @@ hr {
 }
 
 .blog-side-bar {
-  margin: 3rem 0;
+  margin: 3rem auto;
+  max-width: 680px;
+}
+.blog-side-bar .wp-block-group {
+  margin-bottom: 2rem;
 }
 .blog-side-bar h2 {
   color: var(--clr--main-dark);
@@ -711,6 +755,9 @@ hr {
   padding: 10px;
   border-radius: 4px;
 }
+.blog-side-bar .wp-block-latest-posts li {
+  padding: 4px 0;
+}
 .blog-side-bar .wp-block-latest-posts li a {
   color: var(--clr--main-light);
   transition: var(--transition);
@@ -720,6 +767,9 @@ hr {
 }
 .blog-side-bar .wp-block-latest-posts li::before {
   content: "📜 ";
+}
+.blog-side-bar .wp-block-archives li {
+  padding: 4px 0;
 }
 .blog-side-bar .wp-block-archives li a {
   color: var(--clr--main-light);
@@ -733,6 +783,9 @@ hr {
 }
 .blog-side-bar .wp-block-latest-posts {
   margin-bottom: 2rem;
+}
+.blog-side-bar .wp-block-categories li {
+  padding: 4px 0;
 }
 
 .page-padding {
@@ -775,6 +828,11 @@ hr {
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
+@media screen and (max-width: 576px) {
+  #tema-voca-list {
+    grid-template-columns: 1fr;
+  }
+}
 
 #tema-voca-list a {
   color: var(--clr--main-light);
@@ -794,8 +852,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 80px;
-  max-width: 160px;
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;
@@ -804,6 +860,11 @@ hr {
 .btn-tema-voca:hover {
   border-color: var(--clr--main-dark);
   background-color: rgba(0, 0, 0, 0.04);
+}
+@media screen and (max-width: 576px) {
+  .btn-tema-voca {
+    padding: 20px 0;
+  }
 }
 
 .tema-voca-words {
@@ -893,7 +954,11 @@ hr {
   margin: 2rem 0;
   width: 80%;
   max-width: 800px;
-  min-width: 300px;
+}
+@media screen and (max-width: 576px) {
+  .docu-container hr {
+    width: 100%;
+  }
 }
 .docu-container .basic-gramm {
   line-height: 1.6;

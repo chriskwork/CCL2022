@@ -43,7 +43,7 @@
   }
 }
 
-// 테마단어 페이지 ######################################
+// ##### 테마단어 페이지
 // Tema Voca Index Buttons Styles
 
 #tema-voca-list {
@@ -51,6 +51,10 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 #tema-voca-list a {
@@ -75,9 +79,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 80px;
-  max-width: 160px;
-
   border: 1px solid var(--clr--border);
   padding: 10px 20px;
   border-radius: 6px;
@@ -86,6 +87,10 @@
   &:hover {
     border-color: var(--clr--main-dark);
     background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 20px 0;
   }
 }
 
@@ -121,7 +126,7 @@
   }
 }
 
-// 다운로드 페이지 ######################################
+// ##### 다운로드 페이지
 // DOWNLOADS PAGE
 
 .dl-section:not(last-child) {
@@ -144,7 +149,7 @@
   }
 }
 
-// 스페인어 문법 페이지 ######################################
+// ##### 스페인어 문법 페이지
 // GRAMMARS PAGE
 
 #grammars {
@@ -172,7 +177,7 @@
 .docu-container {
   padding: 3rem 0;
 
-  // 전치사 개별 페이지
+  // ##### 전치사 개별 페이지
   .docu-block {
     line-height: 1.4;
 
@@ -203,10 +208,13 @@
     margin: 2rem 0;
     width: 80%;
     max-width: 800px;
-    min-width: 300px;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
-  // 기초문법 시리즈 개별 페이지
+  // ##### 기초문법 시리즈 개별 페이지
   .basic-gramm {
     line-height: 1.6;
 

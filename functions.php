@@ -99,3 +99,17 @@ add_action('widgets_init', 'ccl_widget_areas');
   }
   // Source: https://presscustomizr.com/
 ?>
+
+<?php 
+
+  // function the_content_filter($content) {
+  //   $block = join("|",array("one_third", "team_member"));
+  //   $rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
+  //   $rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
+  // return $rep;
+  // }
+  // add_filter("the_content", "the_content_filter");
+
+  remove_filter( 'the_content', 'wpautop' );
+
+?>

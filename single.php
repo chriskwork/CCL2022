@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="blog-index">
+<div class="post-padding">
 
   <div class="container">
     
@@ -18,9 +18,9 @@
     ?>
     </article>
   
-    <br />
+    
     <hr />
-    <br />
+    
     <!-- 사이드바 -->
   
     <div class="blog-side-bar">
