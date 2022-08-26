@@ -37,11 +37,10 @@
             <li><a href="<?php echo get_home_url(); ?>/vocabulary" class="nav-link text-14">테마별 단어</a></li>
             <li><a href="<?php echo get_home_url(); ?>/downloads" class="nav-link text-14">다운로드</a></li>
             <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link text-14">블로그</a></li>
+            <li>
+              <img class="mode-toggle-btn" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/moon.svg" alt="다크 모드 전환 버튼">
+            </li>
           </ul>
-
-          <div>
-            <img class="mode-toggle-btn" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/moon.svg" alt="다크 모드 전환 버튼">
-          </div>
         </div>
 
         <div class="hamburger">
@@ -49,6 +48,8 @@
           <div class="bar"></div>
         </div>
       </nav>
+
+      <div class="mobile-overlay"></div>
     
     </header>
 

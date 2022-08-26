@@ -2,9 +2,12 @@
 //
 //
 
+const body = document.querySelector('body');
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
-const testBtn = document.querySelector('.mode-toggle-btn');
+const colorModeSwitchBtn = document.querySelector('.mode-toggle-btn');
+const hamBtn = nav.querySelector('.hamburger');
+const navMenu = nav.querySelector('.links');
 
 function stickyNavbar() {
   header.classList.toggle('scrolled', window.pageYOffset > 0);
@@ -15,8 +18,14 @@ stickyNavbar();
 window.addEventListener('scroll', stickyNavbar);
 
 nav.addEventListener('click', () => {
-  console.log('btn clicked');
   header.classList.toggle('scrolled');
+});
+
+// Mobile version hamburger menu
+
+hamBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('mobile-show');
+  body.classList.toggle('scroll-lock');
 });
 
 // ################## Pages header dynamic className

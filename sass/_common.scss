@@ -3,9 +3,9 @@ body {
   line-height: 1.4;
   font-family: 'Noto Sans', sans-serif;
 
-  // @media (max-width: $tablet) {
-  //   display: none;
-  // }
+  &.scroll-lock {
+    overflow-y: hidden;
+  }
 }
 
 h1,
@@ -60,6 +60,10 @@ li {
   max-width: 1196px;
   margin: 0 auto;
   padding: 0 3rem;
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 1rem;
+  }
 }
 
 .spanish {

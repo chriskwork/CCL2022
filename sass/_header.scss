@@ -7,8 +7,22 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 99;
+  background-color: var(--clr--bg);
   transition: var(--transition);
+
+  @media (max-width: $mobile) {
+    height: 64px;
+
+    .mobile-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
 }
 
 nav {
@@ -17,10 +31,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   #logo {
     width: auto;
     height: 60px;
+
+    @media (max-width: $mobile) {
+      height: 48px;
+    }
   }
 
   .links {
@@ -30,6 +49,7 @@ nav {
     ul {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       li {
         margin: 0 1rem;
@@ -60,13 +80,52 @@ nav {
         background-color: #d8d7d7;
       }
     }
+
+    //
+    // Mobile Version Hamburger Menu
+    //
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 58px;
+      z-index: inherit;
+      background-color: var(--clr--bg);
+      box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
+
+      &.mobile-show {
+        display: flex;
+      }
+
+      ul {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        li {
+          margin: 0;
+          padding: 40px 0;
+
+          &:hover {
+            background-color: var(--clr--white);
+          }
+        }
+
+        .nav-link {
+          font-size: 1rem;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 
 header.scrolled {
   background-color: #fff;
   box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
   height: 64px;
 }
 
@@ -88,7 +147,7 @@ header.scrolled #logo {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: var(--heading-color);
+    background-color: var(--clr--main-light);
     border-radius: 3px;
 
     &:first-child {
@@ -99,6 +158,14 @@ header.scrolled #logo {
     &:last-child {
       bottom: 1rem;
       transition: bottom 0.2s 0.15s, transform 0.3s;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+
+    .bar {
+      right: 10px;
     }
   }
 }
