@@ -15,6 +15,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <div class="mobile-overlay "></div>
 
     <header class="">
       <?php
@@ -46,10 +47,11 @@
         <div class="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
+          
         </div>
       </nav>
 
-      <div class="mobile-overlay"></div>
+      
     
     </header>
 

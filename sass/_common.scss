@@ -2,9 +2,28 @@ body {
   background-color: var(--clr--bg);
   line-height: 1.4;
   font-family: 'Noto Sans', sans-serif;
+  position: relative;
 
   &.scroll-lock {
     overflow-y: hidden;
+  }
+}
+
+.mobile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 98;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+
+  &.hide {
+    opacity: 1;
   }
 }
 

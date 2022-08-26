@@ -8,9 +8,10 @@ const nav = document.querySelector('nav');
 const colorModeSwitchBtn = document.querySelector('.mode-toggle-btn');
 const hamBtn = nav.querySelector('.hamburger');
 const navMenu = nav.querySelector('.links');
+const overlay = body.querySelector('.mobile-overlay');
 
 function stickyNavbar() {
-  header.classList.toggle('scrolled', window.pageYOffset > 0);
+  header.classList.toggle('scrolled', window.pageYOffset > 80);
 }
 
 stickyNavbar();
@@ -25,7 +26,9 @@ nav.addEventListener('click', () => {
 
 hamBtn.addEventListener('click', () => {
   navMenu.classList.toggle('mobile-show');
+  hamBtn.classList.toggle('clicked');
   body.classList.toggle('scroll-lock');
+  overlay.classList.toggle('hide');
 });
 
 // ################## Pages header dynamic className

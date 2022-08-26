@@ -1,4 +1,5 @@
 .ccl-hero.intro {
+  width: 100%;
   height: 460px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,10 +24,24 @@
   }
 
   @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-items: center;
+    gap: 60px;
+
+    .intro-text {
+      order: 2;
+    }
+
+    .intro-img {
+      order: 1;
+    }
   }
 }
 
-// Card Section
+// ##### Card Section
 
 section.cards {
   padding-bottom: 3rem;
@@ -60,9 +75,14 @@ section.cards {
       margin-bottom: 0.5rem;
     }
   }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
-// Blog Section
+// ##### Blog Section
 
 .section-header {
   display: flex;
@@ -98,7 +118,7 @@ section.cards {
     }
 
     &-data {
-      padding: 10px 16px;
+      padding: 20px 16px;
     }
 
     h4 a {
@@ -124,12 +144,14 @@ section.cards {
     }
 
     &-category {
-      border: 1px solid var(--clr--border);
+      display: flex;
+      align-items: center;
       padding: 4px;
       border-radius: 4px;
 
       a {
         color: var(--clr--grey);
+        margin-left: 6px;
       }
     }
 
@@ -146,11 +168,28 @@ section.cards {
       color: var(--clr--main-dark);
     }
   }
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
-// About Section
+// ##### About Section
 
-.buymeacoffee-banner {
-  margin-top: 1.5rem;
-  width: 200px;
+section.about {
+  a {
+    display: block;
+  }
+
+  .buymeacoffee-banner {
+    margin-top: 1.5rem;
+    width: 200px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
