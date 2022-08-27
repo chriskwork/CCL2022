@@ -25,6 +25,7 @@
   
     <div class="blog-side-bar">
       <?php dynamic_sidebar('sidebar-1'); ?>
+      
     </div>
 
     <br />

@@ -1,6 +1,6 @@
 <?php
 
-// adds dynamic title tag support
+// ##### adds dynamic title tag support
 function ccl_theme_support(){
   add_theme_support('title-tag');
   add_theme_support('custom-logo');
@@ -9,7 +9,7 @@ function ccl_theme_support(){
 
 add_action('after_setup_theme', 'ccl_theme_support');
 
-// menus
+// ##### menus
 function ccl_menus(){
   $locations = array(
     'primary' => "header menu",
@@ -22,7 +22,7 @@ function ccl_menus(){
 add_action('init', 'ccl_menus');
 
 
-// css, js files link dynamically
+// ##### css, js files link dynamically
 function ccl_styles(){
   wp_enqueue_style('ccl-main-style', get_template_directory_uri()."/style.css", array());
 }
@@ -43,7 +43,7 @@ add_action('wp_enqueue_scripts', 'ccl_styles');
 
 // add_action('wp_enqueue_scripts', 'ccl_scripts');
 
-// side bar
+// ##### side bar
 function ccl_widget_areas(){
 
   register_sidebar(
@@ -68,8 +68,9 @@ add_action('widgets_init', 'ccl_widget_areas');
 
 
 <?php 
-  // 워드프레스 글 하단에 표시되는 이전 글/다음 글 내비게이션을 카테고리로 제한
+  // ##### 워드프레스 글 하단에 표시되는 이전 글/다음 글 내비게이션을 카테고리로 제한
   // Restrict the post navigation to the same category
+
   add_filter( 'get_next_post_join', 'navigate_in_same_taxonomy_join', 20);
   add_filter( 'get_previous_post_join', 'navigate_in_same_taxonomy_join', 20 );
   function navigate_in_same_taxonomy_join() {
@@ -102,6 +103,8 @@ add_action('widgets_init', 'ccl_widget_areas');
 
 <?php 
 
+// ##### Remove auto <br> and <p> on posts
+
   // function the_content_filter($content) {
   //   $block = join("|",array("one_third", "team_member"));
   //   $rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
@@ -111,5 +114,22 @@ add_action('widgets_init', 'ccl_widget_areas');
   // add_filter("the_content", "the_content_filter");
 
   remove_filter( 'the_content', 'wpautop' );
+
+?>
+
+<?php 
+
+// ##### Show only posts result when researching
+
+  function searchfilter($query) {
+  
+    if ($query->is_search && !is_admin() ) {
+        $query->set('post_type','post');
+    }
+
+  return $query;
+  }
+
+  add_filter('pre_get_posts','searchfilter');
 
 ?>

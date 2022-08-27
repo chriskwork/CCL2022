@@ -16,6 +16,11 @@ header {
   }
 }
 
+header.scrolled {
+  background-color: var(--clr--bg);
+  box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+}
+
 nav {
   width: 100%;
   // padding: 2rem 0;
@@ -114,11 +119,6 @@ nav {
       }
     }
   }
-}
-
-header.scrolled {
-  background-color: var(--clr--bg);
-  box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
 
 // mobile version nav bar (hamburger menu)

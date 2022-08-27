@@ -38,7 +38,14 @@ hamBtn.addEventListener('click', () => {
 const pageHeader = document.querySelector('.page-header');
 
 if (pageHeader) {
-  const classNames = ['zaragoza', 'segovia', 'toledo', 'salchicon'];
+  const classNames = [
+    'zaragoza',
+    'segovia',
+    'toledo',
+    'jamon',
+    'barcelona',
+    'flamenco',
+  ];
 
   const ranNum = Math.floor(Math.random() * classNames.length);
 
