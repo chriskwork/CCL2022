@@ -412,6 +412,10 @@ section.cards {
   height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: var(--transition);
+}
+.blog-wrapper .blog-card-thumb-img img:hover {
+  filter: brightness(110%);
 }
 .blog-wrapper .blog-card-data {
   padding: 20px 16px;

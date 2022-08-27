@@ -106,7 +106,9 @@ CONTENTS HERE
               <div class="blog-card">
 
                 <div class="blog-card-thumb-img">
-                  <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
+                  <a href="<?php the_permalink(); ?>">
+                    <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
+                  </a>
                 </div>
 
                 <div class="blog-card-data">
