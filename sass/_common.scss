@@ -70,6 +70,10 @@ li {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
+
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .spanish {

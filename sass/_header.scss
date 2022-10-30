@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  height: 64px;
+  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ header.scrolled {
 
 nav {
   width: 100%;
-  height: 64px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ nav {
   .nav-menu {
     display: block;
     position: absolute;
-    top: 64px;
+    top: 72px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -48,7 +48,7 @@ nav {
     opacity: 0;
 
     &.open {
-      height: calc(100vh - 64px);
+      height: calc(100vh - 72px);
       opacity: 1;
     }
 
@@ -71,12 +71,34 @@ nav {
 
         &.mode-btn-box {
           margin-top: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
 
     .mode-toggle-btn {
       width: 24px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+      height: max-content;
+      opacity: 1;
+      position: static;
+
+      ul {
+        flex-direction: row;
+        margin-left: auto;
+        width: max-content;
+
+        li {
+          width: max-content;
+          padding: 10px;
+          margin-left: 20px;
+        }
+      }
     }
   }
 
@@ -87,6 +109,10 @@ nav {
 
     .navBtn {
       width: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: none;
     }
   }
 }

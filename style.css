@@ -116,6 +116,11 @@ li {
   margin: 0 auto;
   padding: 0 1rem;
 }
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 0;
+  }
+}
 
 .spanish {
   font-family: "Lato", sans-serif;
@@ -144,7 +149,7 @@ li {
 
 header {
   position: fixed;
-  height: 64px;
+  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +167,7 @@ header.scrolled {
 
 nav {
   width: 100%;
-  height: 64px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,7 +182,7 @@ nav .navbar-brand img {
 nav .nav-menu {
   display: block;
   position: absolute;
-  top: 64px;
+  top: 72px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -190,7 +195,7 @@ nav .nav-menu {
   opacity: 0;
 }
 nav .nav-menu.open {
-  height: calc(100vh - 64px);
+  height: calc(100vh - 72px);
   opacity: 1;
 }
 nav .nav-menu ul {
@@ -211,9 +216,36 @@ nav .nav-menu ul li:hover {
 }
 nav .nav-menu ul li.mode-btn-box {
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav .nav-menu .mode-toggle-btn {
   width: 24px;
+}
+@media screen and (min-width: 768px) {
+  nav .nav-menu {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    opacity: 1;
+    position: static;
+  }
+  nav .nav-menu ul {
+    flex-direction: row;
+    margin-left: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  nav .nav-menu ul li {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 10px;
+    margin-left: 20px;
+  }
 }
 nav .hamburger {
   display: flex;
@@ -222,6 +254,11 @@ nav .hamburger {
 }
 nav .hamburger .navBtn {
   width: 30px;
+}
+@media screen and (min-width: 768px) {
+  nav .hamburger {
+    display: none;
+  }
 }
 
 .ccl-hero.intro {
