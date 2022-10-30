@@ -1,15 +1,45 @@
-:root {
-  --clr--white: #fff;
-  --clr--bg: #f4f7fb;
-  --clr--main-dark: #161e34;
-  --clr--main-light: #6978a0;
-  --clr--border: #c4c4c4;
-  --clr--grey: #a7a7a7;
-  --clr--bg-grey: #e7e7e7;
-  --clr--point-lime: #35c635;
-  --clr--point-orange: #f5b452;
-  --clr--table-bg: #f1f1f1;
+/*
+Theme Name: CCL 2023
+Theme URI: https://cafeconlecheesp.com/
+Author: Yohan Kim
+Author URI: https://chriskwork.github.io/yohan-kim/
+Description: Cafe con Leche theme 2023 version.
+Tags: 스페인, 스페인어, 스페인어표현, 스페인어독학, 전치사, 테마별단어, 올라, 카페콘레체, 외국생활
+Version: 1.2
+*/
 
+:root {
+  // font
+  --fam-en: 'Montserrat', sans-serif;
+  --fam-kr: 'Noto Sans KR', sans-serif;
+  --f-1: 2rem;
+  --f-2: 1.75rem;
+  --f-3: 1.375rem;
+  --f-4: 1.25rem;
+  --f-5: 1rem;
+  --f-6: 0.75rem;
+  --f-7: 0.625rem;
+  --f-8: 0.5rem;
+
+  // light mode
+  --c-grey1: hsl(0, 0%, 81%);
+  --c-grey2: hsl(0, 0%, 73%);
+  --c-grey3: hsl(0, 0%, 62%);
+  --c-grey4: hsl(0, 0%, 50%);
+  --c-grey5: hsl(0, 0%, 36%);
+  --c-l-title: hsl(0, 0%, 12%);
+  --c-l-point: hsl(27, 87%, 67%);
+  --c-l-sub-point: hsl(198, 21%, 39%);
+  --c-bg: hsl(0, 0%, 96%);
+  --c-card: hsl(0, 0%, 100%);
+
+  // dark mode
+  --c-d-point: hsl(27, 87%, 67%);
+  --c-d-bg: hsl(0, 0%, 12%);
+  --c-d-card: hsl(0, 0%, 7%);
+
+  // common
+  --c-white: hsl(0, 0%, 100%);
   --border-radius: 10px;
   --transition: 200ms;
 }

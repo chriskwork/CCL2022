@@ -3,27 +3,11 @@ body {
   line-height: 1.4;
   font-family: 'Noto Sans', sans-serif;
   position: relative;
+  background-color: var(--c-bg);
+  color: var(--c-grey5);
 
   &.scroll-lock {
     overflow-y: hidden;
-  }
-}
-
-.mobile-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 98;
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition);
-
-  &.hide {
-    opacity: 1;
   }
 }
 
@@ -33,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--clr--main-dark);
+  color: var(--c-l-sub-point);
 }
 
 a {
@@ -83,14 +67,9 @@ li {
 
 .container {
   position: relative;
-  max-width: 1196px;
+  max-width: 960px;
   margin: 0 auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
-
-  @media screen and (max-width: $mobile) {
-    padding: 0 1rem;
-  }
+  padding: 0 1rem;
 }
 
 .spanish {

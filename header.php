@@ -10,12 +10,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="mobile-overlay "></div>
 
     <header class="">
       <?php
@@ -32,21 +31,20 @@
           <img id="logo" src="<?php echo $logo[0]; ?>" alt="카페콘레체 로고">
         </a>
 
-        <div class="links">
+        <div class="nav-menu">
           <ul>
-            <li><a href="<?php echo get_home_url(); ?>/grammars" class="nav-link text-14">스페인어 문법</a></li>
-            <li><a href="<?php echo get_home_url(); ?>/vocabulary" class="nav-link text-14">테마별 단어</a></li>
-            <li><a href="<?php echo get_home_url(); ?>/downloads" class="nav-link text-14">다운로드</a></li>
-            <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link text-14">블로그</a></li>
-            <!-- <li>
-              <img class="mode-toggle-btn" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/moon.svg" alt="다크 모드 전환 버튼">
-            </li> -->
+            <li><a href="<?php echo get_home_url(); ?>/grammars" class="nav-link">스페인어 문법</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/vocabulary" class="nav-link">테마별 단어</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/downloads" class="nav-link">다운로드</a></li>
+            <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link">블로그</a></li>
+            <li class="mode-btn-box">
+              <img class="mode-toggle-btn" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/moon.svg" alt="다크 모드 전환 버튼" />
+            </li>
           </ul>
         </div>
 
         <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
+          <img class="navBtn" src="<?php echo get_template_directory_uri(); ?>/assets/images/layout/nav-menu.svg" alt="mobile nav button" />
           
         </div>
       </nav>
