@@ -14,7 +14,7 @@ CONTENTS HERE
   <section class="top-section-img">
     <div class="ccl-hero intro container">
       <div class="intro-text">
-        <h1 class="alphabet">¡BIENVENIDOS!</h1>
+        <h1 class="welcome alphabet">¡BIENVENIDOS!</h1>
         <p>
           이 사이트는 스페인어를 혼자 공부하시는 분들께 도움을 드리기 위한 목적으로 만들어졌습니다.
         </p>
