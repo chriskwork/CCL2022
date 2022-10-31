@@ -27,9 +27,10 @@ Version: 1.2
   --c-grey3: hsl(0, 0%, 62%);
   --c-grey4: hsl(0, 0%, 50%);
   --c-grey5: hsl(0, 0%, 36%);
-  --c-l-title: hsl(0, 0%, 12%);
+  --c-l-title: hsl(0, 0%, 14%);
   --c-l-point: hsl(27, 87%, 67%);
   --c-l-sub-point: hsl(198, 21%, 39%);
+  --c-l-sub-point-light: hsl(198, 21%, 49%);
   --c-bg: hsl(0, 0%, 96%);
   --c-card: hsl(0, 0%, 100%);
 
@@ -40,7 +41,7 @@ Version: 1.2
 
   // common
   --c-white: hsl(0, 0%, 100%);
-  --border-radius: 10px;
+  --border-radius: 8px;
   --transition: 200ms;
 }
 

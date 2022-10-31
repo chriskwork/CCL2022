@@ -14,9 +14,9 @@ CONTENTS HERE
   <section class="top-section-img">
     <div class="ccl-hero intro container">
       <div class="intro-text">
-        <h1>¡BIENVENIDOS!</h1>
-        <p class="text-16">
-          이 사이트는 스페인어를 혼자 공부하시는 분들께 도움을 드리기 위한 목적으로 만들어졌습니다. 이거 맞지?
+        <h1 class="alphabet">¡BIENVENIDOS!</h1>
+        <p>
+          이 사이트는 스페인어를 혼자 공부하시는 분들께 도움을 드리기 위한 목적으로 만들어졌습니다.
         </p>
         <a href="<?php echo get_home_url(); ?>/grammars/" class="btn-primary btn-call-action">
           문법 공부 시작하기

@@ -1,6 +1,6 @@
 body {
   background-color: var(--clr--bg);
-  line-height: 1.4;
+  line-height: 1.6;
   font-family: 'Noto Sans', sans-serif;
   position: relative;
   background-color: var(--c-bg);
@@ -18,6 +18,10 @@ h4,
 h5,
 h6 {
   color: var(--c-l-sub-point);
+}
+
+.alphabet {
+  font-family: var(--fam-en);
 }
 
 a {
@@ -46,14 +50,14 @@ li {
 }
 
 .btn-primary {
-  background-color: var(--clr--main-light);
-  color: var(--clr--white);
+  background-color: var(--c-l-sub-point);
+  color: var(--c-white);
   border: 0;
   border-radius: var(--border-radius);
   transition: var(--transition);
 
   &:hover {
-    background-color: var(--clr--point-orange);
+    background-color: var(--c-l-sub-point-light);
   }
 }
 

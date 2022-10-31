@@ -24,16 +24,17 @@ Version: 1.2
   --c-grey3: hsl(0, 0%, 62%);
   --c-grey4: hsl(0, 0%, 50%);
   --c-grey5: hsl(0, 0%, 36%);
-  --c-l-title: hsl(0, 0%, 12%);
+  --c-l-title: hsl(0, 0%, 14%);
   --c-l-point: hsl(27, 87%, 67%);
   --c-l-sub-point: hsl(198, 21%, 39%);
+  --c-l-sub-point-light: hsl(198, 21%, 49%);
   --c-bg: hsl(0, 0%, 96%);
   --c-card: hsl(0, 0%, 100%);
   --c-d-point: hsl(27, 87%, 67%);
   --c-d-bg: hsl(0, 0%, 12%);
   --c-d-card: hsl(0, 0%, 7%);
   --c-white: hsl(0, 0%, 100%);
-  --border-radius: 10px;
+  --border-radius: 8px;
   --transition: 200ms;
 }
 
@@ -47,7 +48,7 @@ Version: 1.2
 
 body {
   background-color: var(--clr--bg);
-  line-height: 1.4;
+  line-height: 1.6;
   font-family: "Noto Sans", sans-serif;
   position: relative;
   background-color: var(--c-bg);
@@ -64,6 +65,10 @@ h4,
 h5,
 h6 {
   color: var(--c-l-sub-point);
+}
+
+.alphabet {
+  font-family: var(--fam-en);
 }
 
 a {
@@ -92,14 +97,14 @@ li {
 }
 
 .btn-primary {
-  background-color: var(--clr--main-light);
-  color: var(--clr--white);
+  background-color: var(--c-l-sub-point);
+  color: var(--c-white);
   border: 0;
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
 .btn-primary:hover {
-  background-color: var(--clr--point-orange);
+  background-color: var(--c-l-sub-point-light);
 }
 
 .top-section-img {
@@ -185,7 +190,6 @@ nav .nav-menu {
   top: 72px;
   left: 0;
   right: 0;
-  bottom: 0;
   width: 100%;
   height: 0;
   background-color: var(--c-bg);
@@ -195,7 +199,7 @@ nav .nav-menu {
   opacity: 0;
 }
 nav .nav-menu.open {
-  height: calc(100vh - 72px);
+  min-height: calc(100vh - 72px);
   opacity: 1;
 }
 nav .nav-menu ul {
