@@ -37,7 +37,7 @@ CONTENTS HERE
         </div>
         <div class="ccl-card-text">
           <h3><a href="<?php echo get_home_url(); ?>/grammars">#스페인어 문법</a></h3>
-          <p class="text-14 clr--main-light">
+          <p>
             알쏭달쏭한 스페인어 문법을 최대한 쉽게 설명하기 위해 노력하고 있습니다.
           </p>
         </div>
@@ -49,7 +49,7 @@ CONTENTS HERE
         </div>
         <div class="ccl-card-text">
           <h3><a href="<?php echo get_home_url(); ?>/vocabulary">#테마별 단어</a></h3>
-          <p class="text-14 clr--main-light">
+          <p>
             현재 총 34개 테마, 약 2174개 단어가 테마별로 나뉘어서 정리되어 있습니다.
           </p>
         </div>
@@ -61,7 +61,7 @@ CONTENTS HERE
         </div>
         <div class="ccl-card-text">
           <h3><a href="<?php echo get_home_url(); ?>/downloads">#다운로드</a></h3>
-          <p class="text-14 clr--main-light">
+          <p>
             모든 자료는 PDF 파일로도 만들어져 업로드 되어있습니다.
           </p>
         </div>
@@ -73,7 +73,7 @@ CONTENTS HERE
         </div>
         <div class="ccl-card-text">
           <h3><a href="<?php echo get_home_url(); ?>/blog">#블로그</a></h3>
-          <p class="text-14 clr--main-light">
+          <p>
             스페인 관련 이야기, 일상 등 개인적인 생각을 모아놓은 공간입니다.
           </p>
         </div>
@@ -97,7 +97,7 @@ CONTENTS HERE
         <?php
   
           $homepagePosts = new WP_Query(array(
-            'posts_per_page' => 5
+            'posts_per_page' => 6
           ));
   
           while($homepagePosts -> have_posts()){
@@ -161,10 +161,10 @@ CONTENTS HERE
 
   <section class="about section-padding">
     <div class="container">
-      <h2 class="section-header">#카페콘레체는..</h2>
-      <p class="text-14 clr--main-light">
+      <h2 class="section-header">카페콘레체는..</h2>
+      <p>
         서른이 넘어 시작한 스페인어는 너무나도 어려웠습니다. 인터넷에 스페인어 공부와 관련된 자료도 은근히 많지 않았기 때문에, '내가 공부한 것들을 정리해서 스페인어를 공부하려는 다른 분들과 공유해야겠다'라는 마음으로 시작하게 되었습니다.<br />
-        도움이 되셨다면, 커피 한 잔 쏴주십쇼! ☕
+        도움이 되셨다면, 커피 한 잔 사주세요! ☕
       </p>
 
       <a href="https://www.buymeacoffee.com/cafeconleche" target="_blank">

@@ -29,24 +29,34 @@ hamBtn.addEventListener('click', () => {
   body.classList.toggle('scroll-lock');
 });
 
+// ################## Landing page BLOG mobile size
+// scroll X with mouse wheel.
+
+const recentPostsContainer = document.querySelector('.blog-wrapper');
+
+recentPostsContainer.addEventListener('wheel', (evt) => {
+  evt.preventDefault();
+  recentPostsContainer.scrollLeft += evt.deltaY;
+});
+
 // ################## Pages header dynamic className
 //
 //
 
-const pageHeader = document.querySelector('.page-header');
+// const pageHeader = document.querySelector('.page-header');
 
-if (pageHeader) {
-  const classNames = [
-    'zaragoza',
-    'segovia',
-    'toledo',
-    'jamon',
-    'barcelona',
-    'flamenco',
-  ];
+// if (pageHeader) {
+//   const classNames = [
+//     'zaragoza',
+//     'segovia',
+//     'toledo',
+//     'jamon',
+//     'barcelona',
+//     'flamenco',
+//   ];
 
-  const ranNum = Math.floor(Math.random() * classNames.length);
+//   const ranNum = Math.floor(Math.random() * classNames.length);
 
-  pageHeader.classList.add(`${classNames[ranNum]}`);
-  console.log(classNames[ranNum]);
-}
+//   pageHeader.classList.add(`${classNames[ranNum]}`);
+//   console.log(classNames[ranNum]);
+// }
