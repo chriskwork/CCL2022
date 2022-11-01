@@ -84,18 +84,16 @@ li {
 }
 
 .section-padding {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .body-padding,
 .post-padding {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 6rem 0;
 }
 
 .blog-padding {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding: 8rem 0;
 }
 
 .btn-primary {
@@ -112,7 +110,7 @@ li {
 }
 
 .top-section-img {
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 
 .ccl-hero {
@@ -368,89 +366,88 @@ section.cards {
   }
 }
 
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+section.blog .section-header {
   margin-bottom: 1rem;
 }
-.section-header .link-underline {
-  text-decoration: underline;
-  font-size: 12px;
-  color: var(--clr--main-light);
+section.blog .blog-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
-.section-header .link-underline:hover {
-  color: var(--clr--main-dark);
+section.blog .blog-wrapper::-webkit-scrollbar {
+  display: none;
 }
-
-.blog-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.blog-wrapper .blog-card {
-  border-radius: 10px;
+section.blog .blog-wrapper .blog-card {
+  min-width: 280px;
+  max-height: 520px;
   overflow: hidden;
-  background-color: var(--clr--white);
+  border-radius: var(--border-radius);
+  background-color: var(--c-white);
 }
-.blog-wrapper .blog-card-thumb-img img {
+section.blog .blog-wrapper .blog-card:not(:last-child) {
+  margin-right: 10px;
+}
+section.blog .blog-wrapper .blog-card-thumb-img {
+  height: 200px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+section.blog .blog-wrapper .blog-card-thumb-img img {
   width: 100%;
-  height: 240px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: var(--transition);
 }
-.blog-wrapper .blog-card-thumb-img img:hover {
-  filter: brightness(110%);
+section.blog .blog-wrapper .blog-card-thumb-img .post-category {
+  position: absolute;
+  top: 4%;
+  background-color: var(--c-l-point);
+  color: var(--c-white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 8px;
+  font-size: var(--f-6);
 }
-.blog-wrapper .blog-card-data {
-  padding: 20px 16px;
+section.blog .blog-wrapper .blog-card-thumb-img .post-category p {
+  margin-left: 4px;
 }
-.blog-wrapper .blog-card h4 a {
-  color: var(--clr--main-dark);
-  font-size: 1.2rem;
+section.blog .blog-wrapper .blog-card-data {
+  padding: 10px;
 }
-.blog-wrapper .blog-card-date {
-  font-size: 12px;
-  color: var(--clr--border);
-  margin: 10px 0;
+section.blog .blog-wrapper .blog-card-data h3 {
+  margin-bottom: 0.5rem;
+}
+section.blog .blog-wrapper .blog-card-data .blog-card-date {
+  font-size: var(--f-6);
+  color: var(--c-grey3);
+}
+section.blog .blog-wrapper .blog-card-data .blog-card-post {
+  margin: 0.5rem 0;
+}
+section.blog .blog-wrapper .blog-card-data .blog-card-post .read-more {
+  font-size: var(--f-5);
+  font-weight: 600;
+  color: var(--c-l-point);
+}
+section.blog .blog-wrapper .blog-card-data .blog-card-more-box {
+  border: var(--border);
   text-align: right;
 }
-.blog-wrapper .blog-card-post {
-  margin-bottom: 1rem;
+section.blog .see-all-posts {
+  margin-top: 2rem;
+  text-align: center;
 }
-.blog-wrapper .blog-card-more-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+section.blog .see-all-posts a {
+  position: relative;
 }
-.blog-wrapper .blog-card-category {
-  display: flex;
-  align-items: center;
-  padding: 4px;
-  border-radius: 4px;
+section.blog .see-all-posts .underline-img {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  z-index: -1;
 }
-.blog-wrapper .blog-card-category a {
-  color: var(--clr--grey);
-  margin-left: 6px;
-}
-.blog-wrapper .blog-card-read-more {
-  background-color: var(--clr--main-dark);
-  color: var(--clr--white);
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: var(--transition);
-}
-.blog-wrapper .blog-card-read-more:hover {
-  background-color: var(--clr--point-orange);
-  color: var(--clr--main-dark);
-}
-@media screen and (max-width: 576px) {
-  .blog-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
 section.about a {
   display: block;
 }
