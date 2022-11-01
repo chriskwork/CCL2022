@@ -45,11 +45,10 @@
 
 .ccl-hero {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
   width: 100%;
-  // min-height: 460px;
-
   text-align: center;
 
   .intro-text {
@@ -69,6 +68,21 @@
   .btn-call-action {
     margin: 2rem auto 0 auto;
     padding: 16px 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 0;
+    text-align: left;
+
+    .intro-text {
+      order: 1;
+
+      margin: auto 0;
+    }
+    .intro-img {
+      order: 2;
+    }
   }
 }
 

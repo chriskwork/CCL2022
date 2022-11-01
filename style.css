@@ -270,6 +270,7 @@ nav .hamburger .navBtn {
 
 .ccl-hero {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
   width: 100%;
@@ -289,6 +290,20 @@ nav .hamburger .navBtn {
 .ccl-hero .btn-call-action {
   margin: 2rem auto 0 auto;
   padding: 16px 32px;
+}
+@media screen and (min-width: 768px) {
+  .ccl-hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 0;
+    text-align: left;
+  }
+  .ccl-hero .intro-text {
+    order: 1;
+    margin: auto 0;
+  }
+  .ccl-hero .intro-img {
+    order: 2;
+  }
 }
 
 section.cards {
