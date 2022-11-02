@@ -130,28 +130,7 @@ li {
 }
 
 .spanish {
-  font-family: "Lato", sans-serif;
-  color: var(--clr--main-dark);
-}
-
-.text-16 {
-  color: var(--clr--main-light);
-}
-
-.text-14 {
-  font-size: 0.875rem;
-}
-
-.text-12 {
-  font-size: 12px;
-}
-
-.clr--main-light {
-  color: var(--clr--main-light);
-}
-
-.clr--grey {
-  color: var(--clr--grey);
+  font-family: var(--fam-en);
 }
 
 header {
