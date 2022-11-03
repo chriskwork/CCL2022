@@ -73,9 +73,9 @@ li {
   position: relative;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 10px;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     padding: 0;
   }
 }
