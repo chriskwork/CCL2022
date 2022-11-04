@@ -1,7 +1,7 @@
 <div class="blog-article-wrapper">
 
   <div class="blog-article">
-    <h1><?php the_title(); ?></h1>
+    <h2><?php the_title(); ?></h2>
     
     <div class="blog-meta-data">
       <span><?php the_tags(''); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</span>

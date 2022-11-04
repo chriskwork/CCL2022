@@ -5,11 +5,11 @@
 </a>
 
   <div class="blog-post">
-    <h2 class="blog-title">
+    <h3 class="blog-title">
       <a href="<?php the_permalink(); ?>">  
         <?php the_title(); ?>
       </a>
-    </h2>
+    </h3>
       
     <div class="blog-meta-data">
       <?php the_tags(''); ?>&nbsp;&nbsp;|&nbsp;&nbsp;

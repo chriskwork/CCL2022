@@ -36,7 +36,7 @@ CONTENTS HERE
           <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/book.svg" alt="">
         </div>
         <div class="ccl-card-text">
-          <h3><a href="<?php echo get_home_url(); ?>/grammars">#스페인어 문법</a></h3>
+          <h4><a href="<?php echo get_home_url(); ?>/grammars">#스페인어 문법</a></h4>
           <p>
             알쏭달쏭한 스페인어 문법을 최대한 쉽게 설명하기 위해 노력하고 있습니다.
           </p>
@@ -48,7 +48,7 @@ CONTENTS HERE
           <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/theme-word.svg" alt="">
         </div>
         <div class="ccl-card-text">
-          <h3><a href="<?php echo get_home_url(); ?>/vocabulary">#테마별 단어</a></h3>
+          <h4><a href="<?php echo get_home_url(); ?>/vocabulary">#테마별 단어</a></h4>
           <p>
             현재 총 34개 테마, 약 2174개 단어가 테마별로 나뉘어서 정리되어 있습니다.
           </p>
@@ -60,7 +60,7 @@ CONTENTS HERE
           <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/download.svg" alt="">
         </div>
         <div class="ccl-card-text">
-          <h3><a href="<?php echo get_home_url(); ?>/downloads">#다운로드</a></h3>
+          <h4><a href="<?php echo get_home_url(); ?>/downloads">#다운로드</a></h4>
           <p>
             모든 자료는 PDF 파일로도 만들어져 업로드 되어있습니다.
           </p>
@@ -72,7 +72,7 @@ CONTENTS HERE
           <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/blog.svg" alt="">
         </div>
         <div class="ccl-card-text">
-          <h3><a href="<?php echo get_home_url(); ?>/blog">#블로그</a></h3>
+          <h4><a href="<?php echo get_home_url(); ?>/blog">#블로그</a></h4>
           <p>
             스페인 관련 이야기, 일상 등 개인적인 생각을 모아놓은 공간입니다.
           </p>
@@ -119,11 +119,11 @@ CONTENTS HERE
                 </div>
 
                 <div class="blog-card-data">
-                  <h3>
+                  <h4>
                     <a href="<?php the_permalink(); ?>">
                       <?php echo wp_trim_words(get_the_title(), 5); ?>
                     </a>
-                  </h3>
+                  </h4>
 
                   <p class="blog-card-date"><?php the_time('Y. m. j'); ?></p>
 
