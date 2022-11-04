@@ -932,6 +932,11 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
 }
+@media screen and (min-width: 768px) {
+  #tema-voca-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 
 .btn-tema-voca {
   display: flex;

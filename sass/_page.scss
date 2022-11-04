@@ -95,6 +95,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .btn-tema-voca {
