@@ -40,30 +40,48 @@ const scrollingY = (evt) => {
   recentPostsContainer.scrollLeft += evt.deltaY;
 };
 
-if (currentWidth >= 768) {
-  recentPostsContainer.removeEventListener('wheel', scrollingY);
-} else {
-  recentPostsContainer.addEventListener('wheel', scrollingY);
+if (recentPostsContainer) {
+  if (currentWidth >= 768) {
+    recentPostsContainer.removeEventListener('wheel', scrollingY);
+  } else {
+    recentPostsContainer.addEventListener('wheel', scrollingY);
+  }
 }
 
-// ################## Pages header dynamic className
+// ################## Switch theme mode(light/dark)
 //
 //
 
-// const pageHeader = document.querySelector('.page-header');
+const switchModeBtn = document.querySelector('.mode-toggle-btn');
 
-// if (pageHeader) {
-//   const classNames = [
-//     'zaragoza',
-//     'segovia',
-//     'toledo',
-//     'jamon',
-//     'barcelona',
-//     'flamenco',
-//   ];
+const savedMode = localStorage.getItem('dark');
 
-//   const ranNum = Math.floor(Math.random() * classNames.length);
+const switchColorMode = (currentMode) => {
+  if (currentMode) {
+    // dark mode = 1
 
-//   pageHeader.classList.add(`${classNames[ranNum]}`);
-//   console.log(classNames[ranNum]);
-// }
+    body.classList.add('dark');
+    switchModeBtn.setAttribute(
+      'src',
+      //TODO: 나중에 링크 주소값 변경할 것.
+      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/sun.svg'
+    );
+    localStorage.setItem('dark', 1);
+  } else {
+    // dark mode = 0
+
+    body.classList.remove('dark');
+    switchModeBtn.setAttribute(
+      'src',
+      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/moon.svg'
+    );
+    localStorage.setItem('dark', 0);
+  }
+};
+
+switchModeBtn.addEventListener('click', () => {
+  switchColorMode(!body.classList.contains('dark'));
+});
+
+switchColorMode(+savedMode);
+// + 표시는 string을 number로 변환해준다.

@@ -16,7 +16,7 @@
   // background-attachment: fixed;
 
   @media screen and (min-width: $tablet) {
-    height: 560px;
+    height: 480px;
   }
 
   &-title {
@@ -62,34 +62,6 @@
 // ##### 테마단어 페이지
 // Tema Voca Index Buttons Styles
 
-#tema-voca-list {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-
-  @media screen and (max-width: $mobile) {
-    grid-template-columns: 1fr;
-  }
-}
-
-#tema-voca-list a {
-  color: var(--clr--main-light);
-
-  &:hover {
-    color: var(--clr--main-dark);
-  }
-}
-
-// tema table (inserted in individual page)
-.tema-table {
-  padding-top: 3rem;
-
-  td {
-    padding: 2px 0;
-  }
-}
-
 // tema list page buttons (tema index page)
 #tema-voca-list {
   display: grid;
@@ -109,11 +81,20 @@
   padding: 20px 0;
   border-radius: 8px;
   transition: var(--transition);
-  background-color: var(--c-white);
+  background-color: var(--c-card);
 
   &:hover {
     border-color: var(--clr--main-dark);
     background-color: rgba(0, 0, 0, 0.04);
+  }
+}
+
+// tema table (inserted in individual page)
+.tema-table {
+  padding-top: 3rem;
+
+  td {
+    padding: 2px 0;
   }
 }
 

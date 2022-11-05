@@ -62,10 +62,10 @@ nav {
         padding: 2rem 0;
         width: 100%;
         text-align: center;
-        color: var(--c-grey4);
+        color: var(--c-para);
 
         &:hover {
-          color: var(--c-l-point);
+          color: var(--c-point);
         }
 
         &.mode-btn-box {
@@ -79,6 +79,7 @@ nav {
 
     .mode-toggle-btn {
       width: 24px;
+      cursor: pointer;
     }
 
     @media screen and (min-width: $tablet) {

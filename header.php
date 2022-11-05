@@ -14,9 +14,9 @@
 
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body class="">
 
-    <header class="">
+    <header>
       <?php
         if(function_exists('the_custom_logo')) {
           // the_custom_logo();

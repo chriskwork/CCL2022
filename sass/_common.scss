@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--c-l-title);
+  color: var(--c-title);
 }
 
 h1 {
@@ -33,7 +33,7 @@ h5 {
 
 a {
   text-decoration: none;
-  color: var(--clr--main-light);
+  color: inherit;
   transition: var(--transition);
 }
 
@@ -56,7 +56,7 @@ li {
 
 .btn-primary {
   display: inline-block;
-  background-color: var(--c-l-sub-point);
+  background-color: var(--c-sub-point);
   color: var(--c-white);
   border: 0;
   border-radius: var(--btn-border-radius);
@@ -64,7 +64,7 @@ li {
   padding: 8px 16px;
 
   &:hover {
-    background-color: var(--c-l-sub-point-light);
+    background-color: var(--c-sub-point-light);
   }
 }
 

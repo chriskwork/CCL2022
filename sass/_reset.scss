@@ -21,11 +21,6 @@ Version: 1.2
   --f-7: 0.625rem;
   --f-8: 0.5rem;
 
-  // dark mode
-  --c-d-point: hsl(27, 87%, 67%);
-  --c-d-bg: hsl(0, 0%, 12%);
-  --c-d-card: hsl(0, 0%, 7%);
-
   // common
   --c-white: hsl(0, 0%, 100%);
   --border-radius: 8px;
@@ -37,16 +32,19 @@ Version: 1.2
 }
 
 body {
-  // light mode
+  // common grey
   --c-grey1: hsl(0, 0%, 81%);
   --c-grey2: hsl(0, 0%, 73%);
   --c-grey3: hsl(0, 0%, 62%);
   --c-grey4: hsl(0, 0%, 50%);
   --c-grey5: hsl(0, 0%, 36%);
-  --c-l-title: hsl(0, 0%, 14%);
-  --c-l-point: hsl(27, 87%, 67%);
-  --c-l-sub-point: hsl(198, 21%, 39%);
-  --c-l-sub-point-light: hsl(198, 21%, 49%);
+
+  // light mode
+  --c-title: hsl(0, 0%, 14%);
+  --c-para: hsl(0, 0%, 50%);
+  --c-point: hsl(27, 87%, 67%);
+  --c-sub-point: hsl(198, 28%, 43%);
+  --c-sub-point-light: hsl(198, 21%, 49%);
   --c-bg: hsl(0, 0%, 96%);
   --c-card: hsl(0, 0%, 98%);
 
@@ -54,12 +52,23 @@ body {
   font-family: 'Noto Sans', sans-serif;
   position: relative;
   background-color: var(--c-bg);
-  color: var(--c-grey5);
+  color: var(--c-para);
   scroll-behavior: smooth;
 
   &.scroll-lock {
     overflow-y: hidden;
   }
+}
+
+body.dark {
+  // dark mode
+  --c-title: hsl(0, 0%, 84%);
+  --c-para: hsl(0, 0%, 60%);
+  --c-point: hsl(27, 87%, 50%);
+  --c-sub-point: hsl(198, 38%, 46%);
+  --c-sub-point-light: hsl(198, 21%, 52%);
+  --c-bg: hsl(0, 0%, 14%);
+  --c-card: hsl(0, 0%, 8%);
 }
 
 *,
@@ -70,7 +79,7 @@ body {
   box-sizing: border-box;
 }
 
-// Responsive BreakPoints (feat: bootstrap)
+// Responsive BreakPoints
 
 $mobile: 576px;
 $tablet: 768px;

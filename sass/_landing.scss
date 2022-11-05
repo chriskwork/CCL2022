@@ -14,7 +14,7 @@
     .welcome {
       font-size: 2.5rem;
       font-weight: 300;
-      color: var(--c-l-sub-point);
+      color: var(--c-sub-point);
     }
   }
 
@@ -79,11 +79,11 @@ section.cards {
       }
     }
 
-    .ccl-card-text h3 {
-      margin-bottom: 0.5rem;
+    .ccl-card-text h4 {
+      color: var(--c-sub-point);
 
       a:active {
-        color: var(--c-l-point);
+        color: var(--c-point);
       }
     }
   }
@@ -169,7 +169,7 @@ section.blog {
         .post-category {
           position: absolute;
           top: 4%;
-          background-color: var(--c-l-point);
+          background-color: var(--c-point);
           color: var(--c-white);
           display: flex;
           align-items: center;
@@ -190,16 +190,16 @@ section.blog {
 
         h3 {
           margin-bottom: 0.5rem;
-          color: var(--c-l-sub-point);
+          color: var(--c-sub-point);
         }
 
         h3 a:active {
-          color: var(--c-l-point);
+          color: var(--c-point);
         }
 
         .blog-card-date {
           font-size: var(--f-6);
-          color: var(--c-grey3);
+          color: var(--c-grey5);
         }
 
         .blog-card-post {
@@ -208,7 +208,7 @@ section.blog {
           .read-more {
             font-size: var(--f-5);
             font-weight: 600;
-            color: var(--c-l-point);
+            color: var(--c-point);
             margin-left: 4px;
 
             &:hover {
@@ -261,7 +261,7 @@ section.blog {
         &-data {
           h3 {
             &:hover {
-              color: var(--c-l-point);
+              color: var(--c-point);
             }
           }
         }
@@ -269,7 +269,7 @@ section.blog {
     }
 
     .see-all-posts a:hover {
-      color: var(--c-l-point);
+      color: var(--c-point);
     }
   }
 } // section.blog
