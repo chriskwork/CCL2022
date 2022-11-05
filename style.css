@@ -19,6 +19,17 @@ Version: 1.2
   --f-6: 0.75rem;
   --f-7: 0.625rem;
   --f-8: 0.5rem;
+  --c-d-point: hsl(27, 87%, 67%);
+  --c-d-bg: hsl(0, 0%, 12%);
+  --c-d-card: hsl(0, 0%, 7%);
+  --c-white: hsl(0, 0%, 100%);
+  --border-radius: 8px;
+  --btn-border-radius: 32px;
+  --transition: 200ms;
+  --border: 1px solid blue;
+}
+
+body {
   --c-grey1: hsl(0, 0%, 81%);
   --c-grey2: hsl(0, 0%, 73%);
   --c-grey3: hsl(0, 0%, 62%);
@@ -30,14 +41,15 @@ Version: 1.2
   --c-l-sub-point-light: hsl(198, 21%, 49%);
   --c-bg: hsl(0, 0%, 96%);
   --c-card: hsl(0, 0%, 98%);
-  --c-d-point: hsl(27, 87%, 67%);
-  --c-d-bg: hsl(0, 0%, 12%);
-  --c-d-card: hsl(0, 0%, 7%);
-  --c-white: hsl(0, 0%, 100%);
-  --border-radius: 8px;
-  --btn-border-radius: 32px;
-  --transition: 200ms;
-  --border: 1px solid blue;
+  line-height: 1.6;
+  font-family: "Noto Sans", sans-serif;
+  position: relative;
+  background-color: var(--c-bg);
+  color: var(--c-grey5);
+  scroll-behavior: smooth;
+}
+body.scroll-lock {
+  overflow-y: hidden;
 }
 
 *,
@@ -46,18 +58,6 @@ Version: 1.2
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: var(--clr--bg);
-  line-height: 1.6;
-  font-family: "Noto Sans", sans-serif;
-  position: relative;
-  background-color: var(--c-bg);
-  color: var(--c-grey5);
-}
-body.scroll-lock {
-  overflow-y: hidden;
 }
 
 h1,

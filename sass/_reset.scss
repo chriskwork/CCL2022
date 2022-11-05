@@ -21,19 +21,6 @@ Version: 1.2
   --f-7: 0.625rem;
   --f-8: 0.5rem;
 
-  // light mode
-  --c-grey1: hsl(0, 0%, 81%);
-  --c-grey2: hsl(0, 0%, 73%);
-  --c-grey3: hsl(0, 0%, 62%);
-  --c-grey4: hsl(0, 0%, 50%);
-  --c-grey5: hsl(0, 0%, 36%);
-  --c-l-title: hsl(0, 0%, 14%);
-  --c-l-point: hsl(27, 87%, 67%);
-  --c-l-sub-point: hsl(198, 21%, 39%);
-  --c-l-sub-point-light: hsl(198, 21%, 49%);
-  --c-bg: hsl(0, 0%, 96%);
-  --c-card: hsl(0, 0%, 98%);
-
   // dark mode
   --c-d-point: hsl(27, 87%, 67%);
   --c-d-bg: hsl(0, 0%, 12%);
@@ -47,6 +34,32 @@ Version: 1.2
 
   // design
   --border: 1px solid blue;
+}
+
+body {
+  // light mode
+  --c-grey1: hsl(0, 0%, 81%);
+  --c-grey2: hsl(0, 0%, 73%);
+  --c-grey3: hsl(0, 0%, 62%);
+  --c-grey4: hsl(0, 0%, 50%);
+  --c-grey5: hsl(0, 0%, 36%);
+  --c-l-title: hsl(0, 0%, 14%);
+  --c-l-point: hsl(27, 87%, 67%);
+  --c-l-sub-point: hsl(198, 21%, 39%);
+  --c-l-sub-point-light: hsl(198, 21%, 49%);
+  --c-bg: hsl(0, 0%, 96%);
+  --c-card: hsl(0, 0%, 98%);
+
+  line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+  background-color: var(--c-bg);
+  color: var(--c-grey5);
+  scroll-behavior: smooth;
+
+  &.scroll-lock {
+    overflow-y: hidden;
+  }
 }
 
 *,

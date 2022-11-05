@@ -33,19 +33,18 @@ hamBtn.addEventListener('click', () => {
 // scroll X with mouse wheel.
 
 const recentPostsContainer = document.querySelector('.blog-wrapper');
+let currentWidth = window.innerWidth;
 
 const scrollingY = (evt) => {
   evt.preventDefault();
   recentPostsContainer.scrollLeft += evt.deltaY;
 };
 
-recentPostsContainer.addEventListener('wheel', scrollingY);
-
-window.onresize = (e) => {
-  let currentWidth = window.innerWidth;
-  if (currentWidth >= 768)
-    recentPostsContainer.removeEventListener('wheel', scrollingY);
-};
+if (currentWidth >= 768) {
+  recentPostsContainer.removeEventListener('wheel', scrollingY);
+} else {
+  recentPostsContainer.addEventListener('wheel', scrollingY);
+}
 
 // ################## Pages header dynamic className
 //
