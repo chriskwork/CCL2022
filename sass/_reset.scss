@@ -41,12 +41,14 @@ body {
 
   // light mode
   --c-title: hsl(0, 0%, 14%);
-  --c-para: hsl(0, 0%, 50%);
+  --c-para: hsl(0, 0%, 40%);
   --c-point: hsl(27, 87%, 67%);
   --c-sub-point: hsl(198, 28%, 43%);
-  --c-sub-point-light: hsl(198, 21%, 49%);
-  --c-bg: hsl(0, 0%, 96%);
+  --c-sub-point-light: hsl(198, 21%, 53%);
+  --c-bg: hsl(0, 0%, 94%);
   --c-card: hsl(0, 0%, 98%);
+  --p-example: hsl(150, 68%, 36%);
+  --p-table-border: hsl(0, 0%, 84%);
 
   line-height: 1.6;
   font-family: 'Noto Sans', sans-serif;
@@ -62,13 +64,15 @@ body {
 
 body.dark {
   // dark mode
-  --c-title: hsl(0, 0%, 84%);
-  --c-para: hsl(0, 0%, 60%);
+  --c-title: hsl(0, 0%, 86%);
+  --c-para: hsl(0, 0%, 75%);
   --c-point: hsl(27, 87%, 50%);
   --c-sub-point: hsl(198, 38%, 46%);
   --c-sub-point-light: hsl(198, 21%, 52%);
   --c-bg: hsl(0, 0%, 14%);
   --c-card: hsl(0, 0%, 8%);
+  --p-example: hsl(150, 68%, 56%);
+  --p-table-border: hsl(0, 0%, 24%);
 }
 
 *,

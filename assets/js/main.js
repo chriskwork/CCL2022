@@ -22,7 +22,7 @@ nav.addEventListener('click', () => {
   header.classList.toggle('scrolled');
 });
 
-// Mobile version hamburger menu
+// Mobile version hamburger menu open and close
 hamBtn.addEventListener('click', () => {
   navMenu.classList.toggle('open');
   hamBtn.classList.toggle('clicked');
@@ -53,7 +53,10 @@ if (recentPostsContainer) {
 //
 
 const switchModeBtn = document.querySelector('.mode-toggle-btn');
+// mobile nav menu bars (white color when the theme is dark mode)
+const mobileMenuBarsImg = nav.querySelector('.navBtn');
 
+// read local storage saved theme data
 const savedMode = localStorage.getItem('dark');
 
 const switchColorMode = (currentMode) => {
@@ -66,6 +69,10 @@ const switchColorMode = (currentMode) => {
       //TODO: 나중에 링크 주소값 변경할 것.
       'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/sun.svg'
     );
+    mobileMenuBarsImg.setAttribute(
+      'src',
+      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/menu-bars-white.svg'
+    );
     localStorage.setItem('dark', 1);
   } else {
     // dark mode = 0
@@ -74,6 +81,10 @@ const switchColorMode = (currentMode) => {
     switchModeBtn.setAttribute(
       'src',
       'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/moon.svg'
+    );
+    mobileMenuBarsImg.setAttribute(
+      'src',
+      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/menu-bars.svg'
     );
     localStorage.setItem('dark', 0);
   }
