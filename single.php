@@ -18,8 +18,7 @@
     ?>
     </article>
   
-    
-    <hr />
+
     
     <!-- 사이드바 -->
   
@@ -28,9 +27,6 @@
       
     </div>
 
-    <br />
-    <hr />
-    <br />
     
     <!-- Comments -->
     <!-- <div class="blog-comments">
