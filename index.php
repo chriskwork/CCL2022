@@ -17,7 +17,7 @@
       }
     ?>
 
-    <!-- 포스트 페이지네이션 -->
+    <!-- Posts pagination -->
     <?php the_posts_pagination(); ?>
     
   

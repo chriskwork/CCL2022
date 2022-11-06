@@ -33,9 +33,9 @@
     <br />
     
     <!-- Comments -->
-    <div class="blog-comments">
-      <?php comments_template(); ?>
-    </div>
+    <!-- <div class="blog-comments">
+      php comments_template();
+    </div> -->
 
   </div>
 

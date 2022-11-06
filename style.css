@@ -41,7 +41,8 @@ body {
   --c-card: hsl(0, 0%, 98%);
   --p-example: hsl(150, 68%, 36%);
   --p-table-border: hsl(0, 0%, 84%);
-  line-height: 1.6;
+  --b-meta-data: hsl(0, 0%, 64%);
+  line-height: 1.5;
   font-family: "Noto Sans", sans-serif;
   position: relative;
   background-color: var(--c-bg);
@@ -62,6 +63,7 @@ body.dark {
   --c-card: hsl(0, 0%, 8%);
   --p-example: hsl(150, 68%, 56%);
   --p-table-border: hsl(0, 0%, 24%);
+  --b-meta-data: hsl(0, 0%, 44%);
 }
 
 *,
@@ -615,7 +617,7 @@ footer .sns-facebook:active {
 
 .blog-meta-data,
 .blog-meta-data a {
-  color: var(--clr--grey);
+  color: var(--b-meta-data);
   font-size: 12px;
 }
 
@@ -623,53 +625,52 @@ footer .sns-facebook:active {
   width: 100%;
   margin-bottom: 2rem;
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  gap: 1rem;
+  background-color: var(--c-card);
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 768px) {
   .blog-article-box {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .blog-article-box .blog-thumb-img-link {
-  min-width: 200px;
-  flex: 1;
+  min-width: 300px;
 }
 .blog-article-box .blog-thumb-img {
-  filter: brightness(96%);
   transition: var(--transition);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.blog-article-box .blog-thumb-img:hover {
-  filter: brightness(100%);
+@media screen and (min-width: 768px) {
+  .blog-article-box .blog-thumb-img {
+    filter: brightness(96%);
+  }
+  .blog-article-box .blog-thumb-img:hover {
+    filter: brightness(100%);
+  }
 }
 .blog-article-box .blog-post {
   display: flex;
   flex-direction: column;
-  flex: 3;
+  padding: 10px;
 }
-.blog-article-box .blog-post .blog-title {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-@media screen and (max-width: 576px) {
-  .blog-article-box .blog-post .blog-title {
-    margin: 1rem 0 1rem 0;
+@media screen and (min-width: 768px) {
+  .blog-article-box .blog-post {
+    padding: 10px 24px;
   }
 }
+.blog-article-box .blog-post .blog-title {
+  margin-bottom: 8px;
+}
 .blog-article-box .blog-post .blog-title a {
-  color: var(--clr--main-dark);
   transition: var(--transition);
 }
 .blog-article-box .blog-post .blog-title a:hover {
-  color: var(--clr--point-lime);
-}
-.blog-article-box .blog-post .blog-excerpt {
-  color: var(--clr--main-light);
+  color: var(--c-point);
 }
 .blog-article-box .blog-post .blog-excerpt p {
   display: inline-block;
@@ -681,7 +682,7 @@ footer .sns-facebook:active {
   font-size: 14px;
   font-weight: 600;
   margin-top: 10px;
-  color: var(--clr--point-lime);
+  color: var(--c-point);
   text-decoration: underline;
 }
 
@@ -689,17 +690,20 @@ nav.pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 20px;
 }
 nav.pagination .nav-links a {
-  color: var(--clr--main-light);
   padding: 4px 8px;
 }
 nav.pagination .nav-links a:hover {
-  color: var(--clr--point-lime);
+  color: var(--c-point);
 }
 nav.pagination .nav-links .page-numbers.current {
-  color: var(--clr--point-lime);
-  border: 1px solid var(--clr--point-lime);
+  color: var(--c-point);
+  border: 1px solid var(--c-point);
   padding: 4px 8px;
   border-radius: 6px;
 }
@@ -709,17 +713,17 @@ nav.pagination .nav-links .page-numbers.current {
   margin: 0 auto;
 }
 
-.blog-article h1 {
-  color: var(--clr--main-dark);
+.blog-article h2 {
   margin-bottom: 1rem;
 }
 .blog-article .blog-meta-data {
   margin-bottom: 2rem;
 }
 .blog-article .blog-content {
-  color: var(--clr--main-light);
   margin-bottom: 6rem;
-  text-align: justify;
+}
+.blog-article strong {
+  color: var(--c-title);
 }
 .blog-article .wp-block-image {
   text-align: center;
@@ -1001,7 +1005,7 @@ hr {
   transition: var(--transition);
 }
 #grammars ol li:hover {
-  color: var(--clr--main-dark);
+  color: var(--c-sub-point);
 }
 #grammars hr {
   margin: 2rem 0;
@@ -1052,7 +1056,7 @@ hr {
 }
 .docu-container .basic-gramm span.grey-example {
   background-color: var(--c-card);
-  padding: 10px;
+  padding: 20px 10px;
   margin: 20px 0;
 }
 .docu-container .basic-gramm table {

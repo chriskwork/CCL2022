@@ -93,7 +93,7 @@ CONTENTS HERE
       </div>
 
       <div class="blog-wrapper">
-        <!-- 블로그 최근 글 5개 불러오기 -->
+        <!-- 블로그 최근 글 6개 불러오기 -->
         <?php
   
           $homepagePosts = new WP_Query(array(

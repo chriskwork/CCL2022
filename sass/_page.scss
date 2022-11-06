@@ -171,7 +171,7 @@
       transition: var(--transition);
 
       &:hover {
-        color: var(--clr--main-dark);
+        color: var(--c-sub-point);
       }
     }
   }
@@ -240,7 +240,7 @@
 
     span.grey-example {
       background-color: var(--c-card);
-      padding: 10px;
+      padding: 20px 10px;
       margin: 20px 0;
     }
 

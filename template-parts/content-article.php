@@ -5,8 +5,8 @@
     
     <div class="blog-meta-data">
       <span><?php the_tags(''); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-      <span><?php the_date(); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-      <span><?php comments_number(); ?></span>
+      <span><?php the_date(); ?>&nbsp;&nbsp;</span>
+      
     </div>
 
     <div class="blog-content">

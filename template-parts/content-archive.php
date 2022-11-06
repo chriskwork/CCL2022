@@ -13,8 +13,8 @@
       
     <div class="blog-meta-data">
       <?php the_tags(''); ?>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <?php the_date(); ?>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <?php comments_number(); ?>
+      <?php the_date(); ?>&nbsp;&nbsp;
+      <!-- <?php comments_number(); ?> -->
     </div>
   
     <div class="blog-excerpt">
