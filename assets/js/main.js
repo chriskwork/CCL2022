@@ -66,12 +66,11 @@ const switchColorMode = (currentMode) => {
     body.classList.add('dark');
     switchModeBtn.setAttribute(
       'src',
-      //TODO: 나중에 링크 주소값 변경할 것.
-      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/sun.svg'
+      'https://cafeconlecheesp.com/wp-content/themes/CCL2022/assets/images/layout/sun.svg'
     );
     mobileMenuBarsImg.setAttribute(
       'src',
-      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/menu-bars-white.svg'
+      'https://cafeconlecheesp.com/wp-content/themes/CCL2022/assets/images/layout/menu-bars-white.svg'
     );
     localStorage.setItem('dark', 1);
   } else {
@@ -80,11 +79,11 @@ const switchColorMode = (currentMode) => {
     body.classList.remove('dark');
     switchModeBtn.setAttribute(
       'src',
-      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/moon.svg'
+      'https://cafeconlecheesp.com/wp-content/themes/CCL2022/assets/images/layout/moon.svg'
     );
     mobileMenuBarsImg.setAttribute(
       'src',
-      'http://ccl2023.local/wp-content/themes/CCL2022/assets/images/layout/menu-bars.svg'
+      'https://cafeconlecheesp.com/wp-content/themes/CCL2022/assets/images/layout/menu-bars.svg'
     );
     localStorage.setItem('dark', 0);
   }
