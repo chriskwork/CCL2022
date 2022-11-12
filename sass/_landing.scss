@@ -35,7 +35,7 @@
 
     .intro-text {
       order: 1;
-
+      padding-left: 20px;
       margin: auto 0;
     }
     .intro-img {
@@ -152,6 +152,10 @@ section.blog {
         margin-right: 10px;
       }
 
+      @media screen and (min-width: $tablet) {
+        min-width: 33.3%;
+      }
+
       // image
 
       &-thumb-img {
@@ -188,18 +192,18 @@ section.blog {
       &-data {
         padding: 10px;
 
-        h3 {
+        h4 {
           margin-bottom: 0.5rem;
-          color: var(--c-sub-point);
         }
 
-        h3 a:active {
+        h4 a:hover,
+        h4 a:active {
           color: var(--c-point);
         }
 
         .blog-card-date {
           font-size: var(--f-6);
-          color: var(--c-grey5);
+          color: var(--b-meta-data);
         }
 
         .blog-card-post {

@@ -115,9 +115,6 @@ add_action('widgets_init', 'ccl_widget_areas');
 
   remove_filter( 'the_content', 'wpautop' );
 
-?>
-
-<?php 
 
 // ##### Show only posts result when researching
 
@@ -132,4 +129,26 @@ add_action('widgets_init', 'ccl_widget_areas');
 
   add_filter('pre_get_posts','searchfilter');
 
+
+  // ##### Load "Featured image" on every blog post page
+  // in the blog editor, use short code: [db_feat_img]
+
+  function db_feat_img_shortcode() {
+    $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large', false );
+	  return '<img src="' . $img_src[0] . '" class="post-feat-img"/>';
+  }
+  add_shortcode( 'db_feat_img', 'db_feat_img_shortcode' );
+
+
+
+
+
+
+
+
+
+
 ?>
+
+
+

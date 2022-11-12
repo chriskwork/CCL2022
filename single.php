@@ -4,6 +4,9 @@
 
 <div class="post-padding">
 
+<!-- hero로 feat img 넣고 싶을 때 아래 활성화 -->
+<!-- <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?> -->
+
   <div class="container">
     
     <article>
