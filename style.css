@@ -351,6 +351,7 @@ section.cards {
 .ccl-cards .ccl-card .ccl-card-text h4 {
   color: var(--c-sub-point);
 }
+.ccl-cards .ccl-card .ccl-card-text h4 a:hover,
 .ccl-cards .ccl-card .ccl-card-text h4 a:active {
   color: var(--c-point);
 }
@@ -722,6 +723,13 @@ nav.pagination .nav-links .page-numbers.current {
 }
 .blog-article .blog-content {
   margin-bottom: 6rem;
+}
+.blog-article .blog-content .wp-post-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 420px;
+  margin-bottom: 2rem;
 }
 .blog-article .post-feat-img {
   margin-bottom: 2rem;

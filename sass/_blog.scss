@@ -120,6 +120,18 @@ nav.pagination {
 
 // Blog Article
 
+// whole post page wrapper
+// active if i want a hero feat img on the top of the post
+// .blog-post-page-wrapper {
+//   .wp-post-image {
+//     width: 100vw;
+//     height: 420px;
+//     object-fit: cover;
+
+//   }
+// }
+
+// individual post article wrapper
 .blog-article-wrapper {
   max-width: 680px;
   margin: 0 auto;
@@ -137,6 +149,14 @@ nav.pagination {
   .blog-content {
     margin-bottom: 6rem;
     // text-align: justify;
+
+    .wp-post-image {
+      // This is the "featured image" !!
+      width: 100%;
+      object-fit: cover;
+      max-height: 420px;
+      margin-bottom: 2rem;
+    }
   }
 
   .post-feat-img {

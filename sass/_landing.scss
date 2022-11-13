@@ -82,6 +82,7 @@ section.cards {
     .ccl-card-text h4 {
       color: var(--c-sub-point);
 
+      a:hover,
       a:active {
         color: var(--c-point);
       }
