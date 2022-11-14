@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- meta tags -->
+    <meta name="description" content="스페인어 혼자 공부하신다고요? 제가 도와드릴게요." />
+    <meta name="keywords" content="스페인어, 스페인어표현, 스페인여행, 스페인어독학, 스페인일상, 원어민표현" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="카페콘레체 - 스페인어 독학하기" />
+    <meta property="og:url" content="https://cafeconlecheesp.com" />
+    <meta property="og:image" content="https://cafeconlecheesp.com/wp-content/themes/CCL2022/assets/images/social/wp-og-image-thumbnail.jpg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -11,6 +20,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- 구글 애드센스 자동광고 코드 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7513179138355363"
+     crossorigin="anonymous"></script>
 
     <?php wp_head(); ?>
   </head>
