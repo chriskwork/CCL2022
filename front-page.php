@@ -72,7 +72,7 @@ CONTENTS HERE
           <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/blog.svg" alt="">
         </div>
         <div class="ccl-card-text">
-          <h4><a href="<?php echo get_home_url(); ?>/blog">#블로그</a></h4>
+          <h4><a href="https://caconle.blogspot.com/" target="_blank">#블로그</a></h4>
           <p>
             스페인 관련 이야기, 일상 등 개인적인 생각을 모아놓은 공간입니다.
           </p>
@@ -84,77 +84,7 @@ CONTENTS HERE
 
 <!-- ########### 블로그 최신 글 섹션 -->
 
-  <section class="blog section-padding">
-    <div class="container">
-
-      <div class="section-header">
-        <h2>블로그 최신 글</h2>
-        <!-- <a class="link-underline" href="<?php echo get_home_url(); ?>/blog">글 더보기 &raquo;</a> -->
-      </div>
-
-      <div class="blog-wrapper">
-        <!-- 블로그 최근 글 6개 불러오기 -->
-        <?php
   
-          $homepagePosts = new WP_Query(array(
-            'posts_per_page' => 6
-          ));
-  
-          while($homepagePosts -> have_posts()){
-            $homepagePosts -> the_post(); ?>
-  
-              <div class="blog-card">
-
-                <div class="blog-card-thumb-img">
-                  <div class="post-category">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-                    <p>
-                      <?php echo get_the_category_list(' '); ?>
-                    </p>
-                  </div>
-
-                  <a href="<?php the_permalink(); ?>">
-                    <?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
-                  </a>
-                </div>
-
-                <div class="blog-card-data">
-                  <h4>
-                    <a href="<?php the_permalink(); ?>">
-                      <?php echo wp_trim_words(get_the_title(), 5); ?>
-                    </a>
-                  </h4>
-
-                  <p class="blog-card-date"><?php the_time('Y. m. j'); ?></p>
-
-                  <p class="blog-card-post">
-                    <?php echo wp_trim_words(get_the_content(), 20); ?>
-
-                    <a href="<?php the_permalink(); ?>" class="read-more">계속 읽기</a>
-                  </p>
-
-
-                </div>
-
-
-              </div>
-            
-  
-          <?php  
-          }
-          wp_reset_postdata();
-        ?>
-  
-      </div>
-
-      <div class="see-all-posts">
-        <a href="<?php echo get_home_url(); ?>/blog">
-          <strong>블로그 글 전체보기</strong>
-          <img class="underline-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/underline.svg" alt="" />
-        </a>
-      </div>
-    </div>
-  </section>
 
 
 <!-- 카페콘레체는.. (About) -->

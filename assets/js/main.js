@@ -95,3 +95,5 @@ switchModeBtn.addEventListener('click', () => {
 
 switchColorMode(+savedMode);
 // + 표시는 string을 number로 변환해준다.
+
+//

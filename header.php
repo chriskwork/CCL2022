@@ -49,7 +49,8 @@
             <li><a href="<?php echo get_home_url(); ?>/grammars" class="nav-link">스페인어 문법</a></li>
             <li><a href="<?php echo get_home_url(); ?>/vocabulary" class="nav-link">테마별 단어</a></li>
             <li><a href="<?php echo get_home_url(); ?>/downloads" class="nav-link">다운로드</a></li>
-            <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link">블로그</a></li>
+            <li><a href="https://caconle.blogspot.com/" class="nav-link" target="_blank">블로그</a></li>
+            <!-- <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link">블로그</a></li> -->
             <li class="mode-btn-box">
               <img class="mode-toggle-btn" src="<?php echo get_template_directory_uri(); ?>/assets/images/layout/moon.svg" alt="다크 모드 전환 버튼" />
             </li>
