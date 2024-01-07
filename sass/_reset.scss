@@ -51,6 +51,7 @@ body {
   --p-example: hsl(150, 68%, 36%);
   --p-table-border: hsl(0, 0%, 84%);
   --b-meta-data: hsl(0, 0%, 64%);
+  --sombra: 0 0 24px rgba(0, 0, 0, 0.1);
 
   line-height: 1.5;
   font-family: 'Noto Sans', sans-serif;
@@ -76,6 +77,7 @@ body.dark {
   --p-example: hsl(150, 68%, 56%);
   --p-table-border: hsl(0, 0%, 24%);
   --b-meta-data: hsl(0, 0%, 44%);
+  --sombra: 0 0 24px rgba(255, 255, 255, 0.1);
 }
 
 *,

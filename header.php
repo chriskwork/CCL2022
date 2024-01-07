@@ -21,9 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- 구글 애드센스 자동광고 코드 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7513179138355363"
-     crossorigin="anonymous"></script>
+
 
      <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-04FC9XFX9M"></script>
@@ -59,8 +57,8 @@
             <li><a href="<?php echo get_home_url(); ?>/grammars" class="nav-link">스페인어 문법</a></li>
             <li><a href="<?php echo get_home_url(); ?>/vocabulary" class="nav-link">테마별 단어</a></li>
             <li><a href="<?php echo get_home_url(); ?>/downloads" class="nav-link">다운로드</a></li>
-            <li><a href="https://caconle.blogspot.com/" class="nav-link" target="_blank">블로그</a></li>
-            <!-- <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link">블로그</a></li> -->
+            <li><a href="<?php echo get_home_url(); ?>/blog" class="nav-link">블로그</a></li>
+            <!-- Light/Dark mode toggle iconButton -->
             <li class="mode-btn-box">
               <img class="mode-toggle-btn" src="<?php echo get_template_directory_uri(); ?>/assets/images/layout/moon.svg" alt="다크 모드 전환 버튼" />
             </li>
@@ -73,7 +71,6 @@
         </div>
       </nav>
 
-      
     
     </header>
 

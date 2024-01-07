@@ -1,6 +1,5 @@
 <div class="blog-article-wrapper">
 
-
   <div class="blog-article">
     <h2><?php the_title(); ?></h2>
     

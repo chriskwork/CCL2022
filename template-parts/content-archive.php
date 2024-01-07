@@ -1,7 +1,7 @@
 <article class="blog-article-box">
 
 <a class="blog-thumb-img-link" href="<?php the_permalink(); ?>">  
-  <img class="blog-thumb-img" src="<?php the_post_thumbnail_url('medium'); ?>" alt="블로그 포스트 이미지" />
+  <img class="blog-thumb-img" src="<?php the_post_thumbnail_url('large'); ?>" alt="블로그 포스트 이미지" />
 </a>
 
   <div class="blog-post">
