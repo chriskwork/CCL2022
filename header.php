@@ -49,7 +49,7 @@
 
       <nav class="container">
         <a class="navbar-brand" href="<?php print get_home_url(); ?>">
-          <img id="logo" src="<?php echo $logo[0]; ?>" alt="카페콘레체 로고">
+          <img id="logo" src="<?php echo $logo[0]; ?>" alt="카페콘레체 로고" />
         </a>
 
         <div class="nav-menu">
@@ -66,7 +66,7 @@
         </div>
 
         <div class="hamburger">
-          <img class="navBtn" src="<?php echo get_template_directory_uri(); ?>/assets/images/layout/nav-menu.svg" alt="mobile nav button" />
+          <img class="navBtn" src="<?php echo get_template_directory_uri(); ?>/assets/images/layout/nav-menu.svg" alt="메뉴 버튼" />
           
         </div>
       </nav>

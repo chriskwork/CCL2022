@@ -22,7 +22,7 @@ CONTENTS HERE
           문법 공부 시작하기
         </a>
       </div>
-      <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/intro-image.svg" alt="">
+      <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/intro-image.svg" alt="책이 쌓여있는 첫화면 메인 이미지" />
     </div>
   </section>
 
@@ -33,7 +33,7 @@ CONTENTS HERE
 
       <div class="ccl-card">
         <div class="ccl-card-icon">
-          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/book.svg" alt="">
+          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/book.svg" alt="문법 아이콘" />
         </div>
         <div class="ccl-card-text">
           <h4><a href="<?php echo get_home_url(); ?>/grammars">#스페인어 문법</a></h4>
@@ -45,7 +45,7 @@ CONTENTS HERE
 
       <div class="ccl-card">
         <div class="ccl-card-icon">
-          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/theme-word.svg" alt="">
+          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/theme-word.svg" alt="테마 단어 아이콘" />
         </div>
         <div class="ccl-card-text">
           <h4><a href="<?php echo get_home_url(); ?>/vocabulary">#테마별 단어</a></h4>
@@ -57,7 +57,7 @@ CONTENTS HERE
 
       <div class="ccl-card">
         <div class="ccl-card-icon">
-          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/download.svg" alt="">
+          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/download.svg" alt="다운로드 아이콘" />
         </div>
         <div class="ccl-card-text">
           <h4><a href="<?php echo get_home_url(); ?>/downloads">#다운로드</a></h4>
@@ -69,10 +69,10 @@ CONTENTS HERE
 
       <div class="ccl-card">
         <div class="ccl-card-icon">
-          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/blog.svg" alt="">
+          <img class="intro-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/blog.svg" alt="블로그 아이콘" />
         </div>
         <div class="ccl-card-text">
-          <h4><a href="https://caconle.blogspot.com/" target="_blank">#블로그</a></h4>
+          <h4><a href="<?php echo get_home_url(); ?>/blog">#블로그</a></h4>
           <p>
             스페인 관련 이야기, 일상 등 개인적인 생각을 모아놓은 공간입니다.
           </p>
@@ -100,7 +100,7 @@ CONTENTS HERE
       </p>
 
       <a href="https://www.buymeacoffee.com/cafeconleche" target="_blank">
-        <img class="buymeacoffee-banner" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/orange-button.png" alt="">
+        <img class="buymeacoffee-banner" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/orange-button.png" alt="커피값 후원 페이지 링크 배너" />
     </a>
     </div>
   </section>
