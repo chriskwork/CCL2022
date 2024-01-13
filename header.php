@@ -23,15 +23,7 @@
 
 
 
-     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-04FC9XFX9M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-04FC9XFX9M');
-    </script>
 
     <?php wp_head(); ?>
   </head>
