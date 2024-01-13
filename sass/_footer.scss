@@ -63,24 +63,10 @@ footer {
       color: #fff;
     }
 
-    .instagram:hover,
-    .instagram:hover .tooltip,
-    .instagram:hover .tooltip::before {
-      background-color: #e4405f;
-      color: #fff;
-    }
-
     .twitter:hover,
     .twitter:hover .tooltip,
     .twitter:hover .tooltip::before {
-      background-color: #1da1f2;
-      color: #fff;
-    }
-
-    .facebook:hover,
-    .facebook:hover .tooltip,
-    .facebook:hover .tooltip::before {
-      background-color: #1877f2;
+      background-color: #000;
       color: #fff;
     }
   }
@@ -90,18 +76,11 @@ footer {
     color: #cd201f;
   }
 
-  .sns-instagram:active {
-    color: #e4405f;
-  }
-
   .sns-twitter:active {
-    color: #1da1f2;
+    color: #000;
   }
 
-  .sns-facebook:active {
-    color: #1877f2;
-  }
-
+  // Go to Top Button
   #scrollToTopBtn {
     // display: none;
     position: fixed;
