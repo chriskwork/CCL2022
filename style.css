@@ -26,6 +26,10 @@ Version: 1.2
   --border: 1px solid blue;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --c-grey1: hsl(0, 0%, 81%);
   --c-grey2: hsl(0, 0%, 73%);
@@ -264,6 +268,7 @@ nav .hamburger {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 nav .hamburger .navBtn {
   width: 30px;
@@ -520,6 +525,7 @@ footer {
   background-color: #121212;
   color: #bebebe;
   text-align: center;
+  position: relative;
 }
 footer .sns-wrapper {
   display: inline-flex;
@@ -604,6 +610,26 @@ footer .sns-twitter:active {
 }
 footer .sns-facebook:active {
   color: #1877f2;
+}
+footer #scrollToTopBtn {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--c-point);
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  pointer-events: none;
+}
+footer #scrollToTopBtn.show {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .blog-index {
@@ -717,6 +743,7 @@ nav.pagination .nav-links .page-numbers.current {
 .blog-article-wrapper {
   max-width: 680px;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 .blog-article h2 {
@@ -1112,7 +1139,7 @@ form.post-search-form input {
   height: 100%;
   padding: 12px;
   border-radius: 16px;
-  border: none;
+  border: 1px solid var(--c-grey1);
   margin-right: 8px;
   transition: all 0.25s;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.025);
@@ -1126,6 +1153,14 @@ form.post-search-form input::-moz-placeholder {
 }
 form.post-search-form input::placeholder {
   color: var(--c-grey2);
+}
+@media screen and (max-width: 576px) {
+  form.post-search-form input {
+    width: 100%;
+  }
+  form.post-search-form input:focus {
+    width: 100%;
+  }
 }
 form.post-search-form .post-search-btn {
   width: 64px;

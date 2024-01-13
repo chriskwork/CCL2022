@@ -2,6 +2,7 @@ footer {
   background-color: #121212;
   color: #bebebe;
   text-align: center;
+  position: relative;
 
   .sns-wrapper {
     display: inline-flex;
@@ -99,5 +100,28 @@ footer {
 
   .sns-facebook:active {
     color: #1877f2;
+  }
+
+  #scrollToTopBtn {
+    // display: none;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    bottom: 24px;
+    right: 24px;
+    background-color: var(--c-point);
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 250ms ease;
+    pointer-events: none;
+  }
+
+  #scrollToTopBtn.show {
+    opacity: 1;
+    pointer-events: all;
   }
 }
