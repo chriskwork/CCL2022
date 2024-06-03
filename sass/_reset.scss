@@ -96,24 +96,18 @@ body.dark {
 
 // Responsive BreakPoints
 
-$breakpoints: (
-    'mobile': 767px,
-    'tablet': 1023px,
-    'desktop': 1200px,
-);
-
 @mixin mobile {
-    @media (max-width: map-get($breakpoints, 'mobile')) {
+    @media (max-width: 768px) {
         @content;
     }
 }
 @mixin tablet {
-    @media (min-width: map-get($breakpoints, 'tablet')) {
+    @media (min-width: 769px) and (max-width: 1024px) {
         @content;
     }
 }
 @mixin desktop {
-    @media (min-width: map-get($breakpoints, 'desktop')) {
+    @media (min-width: 1025px) and (max-width: 1920px) {
         @content;
     }
 }

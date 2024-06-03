@@ -1,5 +1,9 @@
 // ##### Main hero section
 
+.top-section-img {
+    padding: 10% 0 16%;
+}
+
 .ccl-hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -10,6 +14,13 @@
 
     .intro-text {
         order: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        & > p {
+            font-size: 0.875rem;
+        }
 
         .welcome {
             font-size: 2.5rem;
@@ -21,11 +32,13 @@
     .intro-img {
         order: 1;
         width: 90%;
+        max-width: 460px;
     }
 
     .btn-call-action {
+        font-size: 0.93rem;
         margin: 2rem auto 0 auto;
-        padding: 16px 32px;
+        padding: 1em 2em;
     }
 
     @include tablet {

@@ -39,7 +39,7 @@ nav {
         background-color: var(--c-bg);
         overflow: hidden;
         transform-origin: top right;
-        transition: var(--transition);
+        transition: 10ms;
         opacity: 0;
 
         &.open {
@@ -53,7 +53,7 @@ nav {
             justify-content: flex-start;
             align-items: center;
             height: 100%;
-            gap: 1rem;
+            gap: 2rem;
 
             li {
                 padding: 2rem 0;
@@ -78,6 +78,25 @@ nav {
             width: 24px;
             cursor: pointer;
         }
+
+        @include desktop {
+            width: 100%;
+            height: max-content;
+            opacity: 1;
+            position: static;
+
+            ul {
+                flex-direction: row;
+                margin-left: auto;
+                width: max-content;
+
+                li {
+                    width: max-content;
+                    padding: 10px;
+                    font-size: 0.93rem;
+                }
+            }
+        }
     }
 
     .hamburger {
@@ -90,36 +109,8 @@ nav {
             width: 30px;
         }
 
-        @include tablet {
+        @include desktop {
             display: none;
-        }
-    }
-}
-
-@include mobile {
-    nav {
-        display: none;
-    }
-}
-
-@include tablet {
-    nav .nav-menu {
-        width: 100%;
-        height: max-content;
-        opacity: 1;
-        position: static;
-
-        ul {
-            flex-direction: row;
-            margin-left: auto;
-            width: max-content;
-            gap: 4rem;
-
-            li {
-                width: max-content;
-                padding: 10px;
-                margin-left: 20px;
-            }
         }
     }
 }
