@@ -1,97 +1,97 @@
 // 페이지 공통 스타일
 
 .page-padding {
-  margin: 5rem 0;
+    margin: 5rem 0;
 }
 
 .page-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  // background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
 
-  @media screen and (min-width: $tablet) {
-    height: 480px;
-  }
+    @include tablet {
+        height: 480px;
+    }
 
-  &-title {
-    color: var(--c-white);
-  }
+    &-title {
+        color: var(--c-white);
+    }
 
-  &.download {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(./assets/images/pages/ccl-zaragoza.jpg);
-  }
+    &.download {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(./assets/images/pages/ccl-zaragoza.jpg);
+    }
 
-  &.grammars {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(./assets/images/pages/ccl-segovia.jpg);
-  }
+    &.grammars {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(./assets/images/pages/ccl-segovia.jpg);
+    }
 
-  &.tema-words {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(./assets/images/pages/ccl-cordoba.jpg);
-  }
+    &.tema-words {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(./assets/images/pages/ccl-cordoba.jpg);
+    }
 }
 
 .page-main-content {
-  border-radius: 30px 30px 0 0;
-  margin-top: -24px;
-  background-color: var(--c-bg);
-  z-index: 2;
-  padding: 40px 10px;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 24px;
-    top: 0;
-    left: 0;
-    background-color: var(--c-bg);
     border-radius: 30px 30px 0 0;
-    box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
-    z-index: 1;
-  }
+    margin-top: -24px;
+    background-color: var(--c-bg);
+    z-index: 2;
+    padding: 40px 10px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 24px;
+        top: 0;
+        left: 0;
+        background-color: var(--c-bg);
+        border-radius: 30px 30px 0 0;
+        box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
 }
 
 // go back button style
 
 .btn-go-back-to-list {
-  display: inline-block;
-  font-size: 14px;
-  color: var(--c-white);
-  border: 0;
-  margin-top: 2rem;
-  padding: 8px 16px;
-  transition: var(--transition);
-  background-color: var(--c-sub-point);
-  border-radius: 4px;
-  cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    color: var(--c-white);
+    border: 0;
+    margin-top: 2rem;
+    padding: 8px 16px;
+    transition: var(--transition);
+    background-color: var(--c-sub-point);
+    border-radius: 4px;
+    cursor: pointer;
 
-  &:hover {
-    background-color: var(--c-sub-point-light);
-  }
+    &:hover {
+        background-color: var(--c-sub-point-light);
+    }
 }
 
 // ##### 테마단어 페이지
@@ -99,179 +99,179 @@
 
 // tema list page buttons (tema index page)
 #tema-voca-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
 
-  @media screen and (min-width: $tablet) {
-    grid-template-columns: repeat(6, 1fr);
-  }
+    @include tablet {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 .btn-tema-voca {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // border: 1px solid var(--c-grey3);
-  padding: 20px 0;
-  border-radius: 8px;
-  transition: var(--transition);
-  background-color: var(--c-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid var(--c-grey3);
+    padding: 20px 0;
+    border-radius: 8px;
+    transition: var(--transition);
+    background-color: var(--c-card);
 
-  &:hover {
-    border-color: var(--clr--main-dark);
-    background-color: rgba(0, 0, 0, 0.04);
-  }
+    &:hover {
+        border-color: var(--clr--main-dark);
+        background-color: rgba(0, 0, 0, 0.04);
+    }
 }
 
 // tema table (inserted in individual page)
 .tema-table {
-  padding-top: 3rem;
+    padding-top: 3rem;
 
-  td {
-    padding: 2px 0;
-  }
+    td {
+        padding: 2px 0;
+    }
 }
 
 // individual tema words page (table)
 .tema-voca-words {
-  width: 100%;
-  padding-top: 1rem;
+    width: 100%;
+    padding-top: 1rem;
 
-  tr:nth-child(even) {
-    background-color: var(--c-card);
-  }
-
-  td {
-    padding: 10px;
-
-    span {
-      margin-right: 10px;
+    tr:nth-child(even) {
+        background-color: var(--c-card);
     }
-  }
+
+    td {
+        padding: 10px;
+
+        span {
+            margin-right: 10px;
+        }
+    }
 }
 
 // ##### 다운로드 페이지
 // DOWNLOADS PAGE
 
 .dl-section:not(last-child) {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 #downloads {
-  h4 {
-    margin: 2rem 0 1rem;
-  }
+    h4 {
+        margin: 2rem 0 1rem;
+    }
 
-  ul li {
-    padding: 10px;
-    // margin-left: 1rem;
-  }
+    ul li {
+        padding: 10px;
+        // margin-left: 1rem;
+    }
 
-  a.dl-link:hover {
-    color: var(--clr--main-dark);
-    text-decoration: underline;
-  }
+    a.dl-link:hover {
+        color: var(--clr--main-dark);
+        text-decoration: underline;
+    }
 }
 
 // ##### 스페인어 문법 페이지
 // GRAMMARS PAGE
 
 #grammars {
-  ol {
-    width: max-content;
+    ol {
+        width: max-content;
 
-    li {
-      // margin: 0 0 10px 1rem;
-      padding: 10px;
-      transition: var(--transition);
+        li {
+            // margin: 0 0 10px 1rem;
+            padding: 10px;
+            transition: var(--transition);
 
-      &:hover {
-        color: var(--c-sub-point);
-      }
+            &:hover {
+                color: var(--c-sub-point);
+            }
+        }
     }
-  }
 
-  hr {
-    margin: 2rem 0;
-  }
+    hr {
+        margin: 2rem 0;
+    }
 }
 
 // 문법, 전치사 개별 디테일 페이지
 // Grammars, Prepositions, individual page.
 
 .docu-container {
-  padding: 3rem 0;
+    padding: 3rem 0;
 
-  // ##### 전치사 개별 페이지
-  .docu-block {
-    line-height: 1.4;
+    // ##### 전치사 개별 페이지
+    .docu-block {
+        line-height: 1.4;
 
-    .content-title {
-      margin-bottom: 6px;
+        .content-title {
+            margin-bottom: 6px;
+        }
+
+        .content-header {
+            margin-bottom: 14px;
+            color: var(--p-example);
+        }
+
+        .content-tip {
+            margin-top: 14px;
+            padding: 10px;
+            font-size: 0.9rem;
+            background-color: var(--c-card);
+        }
+
+        .content-tip-header {
+            margin-bottom: 6px;
+        }
     }
 
-    .content-header {
-      margin-bottom: 14px;
-      color: var(--p-example);
+    hr {
+        margin: 2rem 0;
+        width: 100%;
+
+        @include tablet {
+            width: 80%;
+            max-width: 800px;
+        }
     }
 
-    .content-tip {
-      margin-top: 14px;
-      padding: 10px;
-      font-size: 0.9rem;
-      background-color: var(--c-card);
+    // ##### 기초문법 시리즈 개별 페이지
+    .basic-gramm {
+        p {
+            margin-bottom: 2rem;
+        }
+
+        span {
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        span.exception {
+            color: var(--p-example);
+            margin: 20px 0;
+        }
+
+        span.grey-example {
+            background-color: var(--c-card);
+            padding: 20px 10px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            table-layout: fixed;
+
+            th,
+            td {
+                border: 1px solid var(--p-table-border);
+                padding: 4px 10px;
+            }
+        }
     }
-
-    .content-tip-header {
-      margin-bottom: 6px;
-    }
-  }
-
-  hr {
-    margin: 2rem 0;
-    width: 100%;
-
-    @media screen and (min-width: $tablet) {
-      width: 80%;
-      max-width: 800px;
-    }
-  }
-
-  // ##### 기초문법 시리즈 개별 페이지
-  .basic-gramm {
-    p {
-      margin-bottom: 2rem;
-    }
-
-    span {
-      display: block;
-      font-size: 0.9rem;
-    }
-
-    span.exception {
-      color: var(--p-example);
-      margin: 20px 0;
-    }
-
-    span.grey-example {
-      background-color: var(--c-card);
-      padding: 20px 10px;
-      margin: 20px 0;
-    }
-
-    table {
-      width: 100%;
-      max-width: 600px;
-      border-collapse: collapse;
-      margin: 2rem 0;
-      table-layout: fixed;
-
-      th,
-      td {
-        border: 1px solid var(--p-table-border);
-        padding: 4px 10px;
-      }
-    }
-  }
 }

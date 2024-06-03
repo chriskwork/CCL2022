@@ -8,92 +8,112 @@ Tags: 스페인, 스페인어, 스페인어표현, 스페인어독학, 전치사
 Version: 1.2
 */
 
+// Default CSS: for mobile.
+
 :root {
-  // font
-  --fam-en: 'Montserrat', sans-serif;
-  --fam-kr: 'Noto Sans KR', sans-serif;
-  --f-1: 2rem;
-  --f-2: 1.75rem;
-  --f-3: 1.375rem;
-  --f-4: 1.25rem;
-  --f-5: 1rem;
-  --f-6: 0.75rem;
-  --f-7: 0.625rem;
-  --f-8: 0.5rem;
+    // font
+    --fam-en: 'Montserrat', sans-serif;
+    --fam-kr: 'Noto Sans KR', sans-serif;
+    --f-1: 2rem;
+    --f-2: 1.75rem;
+    --f-3: 1.375rem;
+    --f-4: 1.25rem;
+    --f-5: 1rem;
+    --f-6: 0.75rem;
+    --f-7: 0.625rem;
+    --f-8: 0.5rem;
 
-  // common
-  --c-white: hsl(0, 0%, 100%);
-  --border-radius: 8px;
-  --btn-border-radius: 32px;
-  --transition: 200ms;
+    // common
+    --c-white: hsl(0, 0%, 100%);
+    --border-radius: 8px;
+    --btn-border-radius: 32px;
+    --transition: 200ms;
 
-  // design
-  --border: 1px solid blue;
+    // design
+    --border: 1px solid blue;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  // common grey
-  --c-grey1: hsl(0, 0%, 81%);
-  --c-grey2: hsl(0, 0%, 73%);
-  --c-grey3: hsl(0, 0%, 62%);
-  --c-grey4: hsl(0, 0%, 50%);
-  --c-grey5: hsl(0, 0%, 36%);
+    // common grey
+    --c-grey1: hsl(0, 0%, 81%);
+    --c-grey2: hsl(0, 0%, 73%);
+    --c-grey3: hsl(0, 0%, 62%);
+    --c-grey4: hsl(0, 0%, 50%);
+    --c-grey5: hsl(0, 0%, 36%);
 
-  // light mode
-  --c-title: hsl(0, 0%, 14%);
-  --c-para: hsl(0, 0%, 40%);
-  // --c-para: hsl(224, 22%, 52%);
-  --c-point: hsl(27, 87%, 67%);
-  --c-sub-point: hsl(198, 28%, 43%);
-  --c-sub-point-light: hsl(198, 21%, 53%);
-  --c-bg: hsl(0, 0%, 94%);
-  --c-card: hsl(0, 0%, 98%);
-  --p-example: hsl(150, 68%, 36%);
-  --p-table-border: hsl(0, 0%, 84%);
-  --b-meta-data: hsl(0, 0%, 64%);
-  --sombra: 0 0 24px rgba(0, 0, 0, 0.1);
+    // light mode
+    --c-title: hsl(0, 0%, 14%);
+    --c-para: hsl(0, 0%, 40%);
+    // --c-para: hsl(224, 22%, 52%);
+    --c-point: hsl(27, 87%, 67%);
+    --c-sub-point: hsl(198, 28%, 43%);
+    --c-sub-point-light: hsl(198, 21%, 53%);
+    --c-bg: hsl(0, 0%, 94%);
+    --c-card: hsl(0, 0%, 98%);
+    --p-example: hsl(150, 68%, 36%);
+    --p-table-border: hsl(0, 0%, 84%);
+    --b-meta-data: hsl(0, 0%, 64%);
+    --sombra: 0 0 24px rgba(0, 0, 0, 0.1);
 
-  line-height: 1.5;
-  font-family: 'Noto Sans', sans-serif;
-  position: relative;
-  background-color: var(--c-bg);
-  color: var(--c-para);
-  scroll-behavior: smooth;
+    line-height: 1.5em;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    background-color: var(--c-bg);
+    color: var(--c-para);
+    scroll-behavior: smooth;
 
-  &.scroll-lock {
-    overflow-y: hidden;
-  }
+    &.scroll-lock {
+        overflow-y: hidden;
+    }
 }
 
 body.dark {
-  // dark mode
-  --c-title: hsl(0, 0%, 86%);
-  --c-para: hsl(0, 0%, 75%);
-  --c-point: hsl(27, 87%, 50%);
-  --c-sub-point: hsl(198, 38%, 46%);
-  --c-sub-point-light: hsl(198, 21%, 52%);
-  --c-bg: hsl(0, 0%, 14%);
-  --c-card: hsl(0, 0%, 8%);
-  --p-example: hsl(150, 68%, 56%);
-  --p-table-border: hsl(0, 0%, 24%);
-  --b-meta-data: hsl(0, 0%, 44%);
-  --sombra: 0 0 24px rgba(255, 255, 255, 0.1);
+    // dark mode
+    --c-title: hsl(0, 0%, 86%);
+    --c-para: hsl(0, 0%, 75%);
+    --c-point: hsl(27, 87%, 50%);
+    --c-sub-point: hsl(198, 38%, 46%);
+    --c-sub-point-light: hsl(198, 21%, 52%);
+    --c-bg: hsl(0, 0%, 14%);
+    --c-card: hsl(0, 0%, 8%);
+    --p-example: hsl(150, 68%, 56%);
+    --p-table-border: hsl(0, 0%, 24%);
+    --b-meta-data: hsl(0, 0%, 44%);
+    --sombra: 0 0 24px rgba(255, 255, 255, 0.1);
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 // Responsive BreakPoints
 
-$mobile: 576px;
-$tablet: 768px;
-$desktop: 940px;
+$breakpoints: (
+    'mobile': 767px,
+    'tablet': 1023px,
+    'desktop': 1200px,
+);
+
+@mixin mobile {
+    @media (max-width: map-get($breakpoints, 'mobile')) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: map-get($breakpoints, 'tablet')) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, 'desktop')) {
+        @content;
+    }
+}
