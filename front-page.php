@@ -45,7 +45,7 @@
         <div class="ccl-card-text">
           <h4><a href="<?php echo get_home_url(); ?>/vocabulary">#테마별 단어</a></h4>
           <p>
-            현재 총 34개 테마, 약 2174개 단어가 테마별로 나뉘어서 정리되어 있습니다.
+            현재 <strong>총 34개 테마, 약 2174개 단어</strong>가 테마별로 나뉘어서 정리되어 있습니다.
           </p>
         </div>
       </div>

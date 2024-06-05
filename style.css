@@ -277,14 +277,20 @@ nav .hamburger .navBtn {
 }
 
 .top-section-img {
-  padding: 10% 0 16%;
+  padding: 10% 0 20%;
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .top-section-img {
+    padding: 10% 0 14%;
+  }
 }
 
 .ccl-hero {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
-  justify-items: center;
   width: 100%;
   text-align: center;
 }
@@ -292,6 +298,7 @@ nav .hamburger .navBtn {
   order: 2;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 1.2rem;
 }
 .ccl-hero .intro-text > p {
@@ -309,12 +316,12 @@ nav .hamburger .navBtn {
 }
 .ccl-hero .btn-call-action {
   font-size: 0.93rem;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 0 0;
   padding: 1em 2em;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
   .ccl-hero {
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
     padding: 5rem 0;
     text-align: left;
   }
@@ -340,17 +347,17 @@ section.cards {
 .ccl-cards {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   text-align: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 .ccl-cards .ccl-card {
-  padding: 2rem 1rem 1.5rem;
+  padding: 2rem;
   background-color: var(--c-card);
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   align-items: center;
 }
 .ccl-cards .ccl-card .ccl-card-icon {
@@ -362,17 +369,22 @@ section.cards {
 }
 .ccl-cards .ccl-card .ccl-card-text h4 {
   color: var(--c-sub-point);
+  margin-bottom: 0.5rem;
 }
 .ccl-cards .ccl-card .ccl-card-text h4 a:hover,
 .ccl-cards .ccl-card .ccl-card-text h4 a:active {
   color: var(--c-point);
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+.ccl-cards .ccl-card .ccl-card-text p {
+  font-size: 0.93rem;
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
   .ccl-cards {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     text-align: center;
   }
   .ccl-cards .ccl-card {
+    width: 25%;
     transition: box-shadow 0.3s;
   }
   .ccl-cards .ccl-card:nth-child(1) {
