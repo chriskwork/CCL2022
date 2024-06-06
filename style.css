@@ -316,7 +316,7 @@ nav .hamburger .navBtn {
 }
 .ccl-hero .btn-call-action {
   font-size: 0.93rem;
-  margin: 2rem auto 0 0;
+  margin: 2rem auto 0 auto;
   padding: 1em 2em;
 }
 @media (min-width: 1025px) and (max-width: 1920px) {
@@ -332,6 +332,9 @@ nav .hamburger .navBtn {
   }
   .ccl-hero .intro-img {
     order: 2;
+  }
+  .ccl-hero .btn-call-action {
+    margin: 2rem auto 0 0;
   }
 }
 
@@ -527,6 +530,9 @@ section.blog .see-all-posts .underline-img {
 
 section.about .section-header {
   margin-bottom: 1rem;
+}
+section.about p {
+  font-size: 0.875rem;
 }
 section.about a {
   display: inline-block;
