@@ -12,7 +12,7 @@
 .blog-meta-data,
 .blog-meta-data a {
     color: var(--b-meta-data);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 // Blog Index Post Thumbnail Style
@@ -61,14 +61,15 @@
     .blog-post {
         display: flex;
         flex-direction: column;
-        padding: 16px 10px;
+        padding: 1.2rem;
 
         @include tablet {
             padding: 16px 24px;
         }
 
         .blog-title {
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
+            line-height: 1.25em;
         }
 
         .blog-title a {
@@ -148,7 +149,8 @@ nav.pagination {
 
 .blog-article {
     h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.3em;
     }
 
     .blog-meta-data {

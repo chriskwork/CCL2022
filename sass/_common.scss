@@ -4,85 +4,81 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--c-title);
+    color: var(--c-title);
 }
 
 h1 {
-  font-size: var(--f-1);
+    font-size: var(--f-1);
 }
 
 h2 {
-  font-size: var(--f-2);
+    font-size: var(--f-2);
 }
 
 h3 {
-  font-size: var(--f-3);
+    font-size: var(--f-3);
 }
 
 h4 {
-  font-size: var(--f-4);
+    font-size: var(--f-4);
 }
 
 h5 {
-  font-size: var(--f-5);
+    font-size: var(--f-5);
 }
 
 .alphabet {
-  font-family: var(--fam-en);
+    font-family: var(--fam-en);
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .section-padding {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .body-padding,
 .post-padding {
-  padding: 6rem 0;
+    padding: 6rem 0;
+}
+
+.post-padding {
+    padding: 1rem 0 6rem 0;
 }
 
 .blog-padding {
-  padding: 8rem 0;
+    padding: 8rem 0;
 }
 
 .btn-primary {
-  display: inline-block;
-  background-color: var(--c-sub-point);
-  color: var(--c-white);
-  border: 0;
-  border-radius: var(--btn-border-radius);
-  transition: var(--transition);
-  padding: 8px 16px;
+    display: inline-block;
+    background-color: var(--c-sub-point);
+    color: var(--c-white);
+    border: 0;
+    border-radius: var(--btn-border-radius);
+    transition: var(--transition);
+    padding: 8px 16px;
 
-  &:hover {
-    background-color: var(--c-sub-point-light);
-  }
-}
-
-.top-section-img {
-  padding: 8rem 0;
-}
-
-.ccl-hero {
-  width: 100%;
+    &:hover {
+        background-color: var(--c-sub-point-light);
+    }
 }
 
 .container {
-  position: relative;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .spanish {
-  font-family: var(--fam-en);
+    font-family: var(--fam-en);
 }

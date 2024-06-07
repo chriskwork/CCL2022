@@ -23,7 +23,7 @@
         </li>
       </a>
 
-      <a class="sns-twitter" href="" target="_blank">
+      <a class="sns-twitter" href="https://x.com/ccl_classic" target="_blank">
         <li class="icon twitter">
           <span class="tooltip">X</span>
         

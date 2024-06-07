@@ -36,6 +36,8 @@
       }
     ?>
 
+    
+
     <!-- Posts pagination -->
     <?php the_posts_pagination(); ?>
     
