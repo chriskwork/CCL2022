@@ -79,29 +79,32 @@
 
 <!-- ########### 블로그 최신 글 섹션 -->
   <section class="recent-posts section-padding container">
-  <h2 class="section-header">최신 포스트</h2>
-  <?php 
-    // Bring 5 recent posts
-    $recent_posts = new WP_Query(array(
-        'posts_per_page' => 4,
-        'post_status' => 'publish'
-    ));
-    
-    if ($recent_posts->have_posts()) {
-        
-        while ($recent_posts->have_posts()) {
-            $recent_posts->the_post();
-            
-            // load template
-            get_template_part('template-parts/content', 'archive');
-        }
-        
-        // recover post data
-        wp_reset_postdata();
-    } else {
-        echo '<p>최근 포스트가 없습니다.</p>';
-    }
-  ?>
+    <h2 class="section-header">최신 포스트</h2>
+
+    <div class="recent-posts-card">
+    <?php 
+      // Bring 5 recent posts
+      $recent_posts = new WP_Query(array(
+          'posts_per_page' => 4,
+          'post_status' => 'publish'
+      ));
+      
+      if ($recent_posts->have_posts()) {
+          
+          while ($recent_posts->have_posts()) {
+              $recent_posts->the_post();
+              
+              // load template
+              get_template_part('template-parts/content', 'archive');
+          }
+          
+          // recover post data
+          wp_reset_postdata();
+      } else {
+          echo '<p>최근 포스트가 없습니다.</p>';
+      }
+    ?>
+    </div>  
   </section>
   
 

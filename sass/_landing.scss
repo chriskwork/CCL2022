@@ -4,7 +4,7 @@
     padding: 10% 0 20%;
 
     @include desktop {
-        padding: 10% 0 14%;
+        padding: 3% 0 8%;
     }
 }
 
@@ -31,20 +31,25 @@
         .welcome {
             font-size: 2.5rem;
             font-weight: 300;
-            color: var(--c-sub-point);
+            color: var(--c-sub-point-light);
         }
     }
 
     .intro-img {
         order: 1;
-        width: 90%;
+        width: 80%;
         max-width: 460px;
     }
 
     .btn-call-action {
+        background-color: var(--c-point);
         font-size: 0.93rem;
         margin: 2rem auto 0 auto;
         padding: 1em 2em;
+
+        &:hover {
+            filter: brightness(110%);
+        }
     }
 
     @include desktop {
@@ -70,17 +75,22 @@
 // ##### Card Section
 
 section.cards {
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 
     @include tablet {
         padding-bottom: 8rem;
+    }
+
+    @include desktop {
+        padding-bottom: 10%;
     }
 }
 
 .ccl-cards {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     gap: 1.2rem;
 
@@ -117,28 +127,36 @@ section.cards {
         }
     }
 
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .ccl-card {
+            width: calc(50% - 10px);
+        }
+    }
+
     @include desktop {
-        display: flex;
-        text-align: center;
+        flex-direction: row;
 
         .ccl-card {
             width: 25%;
 
-            &:nth-child(1) {
-                transform: translateY(-16px);
-            }
+            // &:nth-child(1) {
+            //     transform: translateY(-16px);
+            // }
 
-            &:nth-child(2) {
-                transform: translateY(16px);
-            }
+            // &:nth-child(2) {
+            //     transform: translateY(16px);
+            // }
 
-            &:nth-child(3) {
-                transform: translateY(-16px);
-            }
+            // &:nth-child(3) {
+            //     transform: translateY(-16px);
+            // }
 
-            &:nth-child(4) {
-                transform: translateY(16px);
-            }
+            // &:nth-child(4) {
+            //     transform: translateY(16px);
+            // }
 
             transition: box-shadow 0.3s;
 
@@ -160,7 +178,11 @@ section.cards {
     margin-bottom: 1.25rem;
 }
 
-section.recent-posts .recent-posts-container {
+section.recent-posts {
+    .recent-posts-card {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
 }
 
 //

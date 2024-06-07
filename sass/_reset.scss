@@ -5,7 +5,7 @@ Author: Yohan Kim
 Author URI: https://chriskwork.github.io/yohan-kim/
 Description: Cafe con Leche theme 2023 version.
 Tags: 스페인, 스페인어, 스페인어표현, 스페인어독학, 전치사, 테마별단어, 올라, 카페콘레체, 외국생활
-Version: 1.2
+Version: 2.0
 */
 
 // Default CSS: for mobile.
@@ -65,10 +65,6 @@ body {
     background-color: var(--c-bg);
     color: var(--c-para);
     scroll-behavior: smooth;
-
-    &.scroll-lock {
-        overflow-y: hidden;
-    }
 }
 
 body.dark {
