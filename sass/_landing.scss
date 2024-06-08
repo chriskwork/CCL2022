@@ -180,8 +180,9 @@ section.cards {
 
 section.recent-posts {
     .recent-posts-card {
-        display: grid;
-        grid-template-columns: 2fr;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
