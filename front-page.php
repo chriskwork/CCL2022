@@ -78,7 +78,7 @@
   </section>
 
 <!-- ########### 블로그 최신 글 섹션 -->
-  <section class="recent-posts section-padding container">
+  <section class="recent-posts">
     <h2 class="section-header">최신 포스트</h2>
 
     <div class="recent-posts-card">

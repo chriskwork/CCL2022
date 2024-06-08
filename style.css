@@ -412,6 +412,11 @@ section.cards {
   margin-bottom: 1.25rem;
 }
 
+section.recent-posts {
+  max-width: 960px;
+  margin: 0 auto 3rem auto;
+  padding: 0 10px;
+}
 section.recent-posts .recent-posts-card {
   display: flex;
   flex-direction: column;
