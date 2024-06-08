@@ -158,10 +158,11 @@ section.cards {
             //     transform: translateY(16px);
             // }
 
-            transition: box-shadow 0.3s;
+            transition: all 0.3s;
 
             &:hover {
                 box-shadow: 0 0 16px rgba(33, 33, 33, 0.1);
+                transform: translateY(-10px);
             }
 
             h3 a:hover {

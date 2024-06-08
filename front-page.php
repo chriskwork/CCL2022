@@ -85,7 +85,7 @@
     <?php 
       // Bring 5 recent posts
       $recent_posts = new WP_Query(array(
-          'posts_per_page' => 4,
+          'posts_per_page' => 3,
           'post_status' => 'publish'
       ));
       

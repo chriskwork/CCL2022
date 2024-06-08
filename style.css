@@ -183,7 +183,7 @@ nav {
   position: relative;
 }
 nav .navbar-brand {
-  width: 42px;
+  width: 52px;
 }
 nav .navbar-brand img {
   width: 100%;
@@ -398,10 +398,11 @@ section.cards {
   }
   .ccl-cards .ccl-card {
     width: 25%;
-    transition: box-shadow 0.3s;
+    transition: all 0.3s;
   }
   .ccl-cards .ccl-card:hover {
     box-shadow: 0 0 16px rgba(33, 33, 33, 0.1);
+    transform: translateY(-10px);
   }
   .ccl-cards .ccl-card h3 a:hover {
     color: var(--c-l-point);
@@ -880,7 +881,7 @@ hr {
 }
 
 .page-padding {
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 .page-header {
@@ -893,22 +894,28 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
   .page-header {
-    height: 480px;
+    height: 400px;
   }
 }
 .page-header-title {
   color: var(--c-white);
 }
-.page-header.download {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/pages/ccl-zaragoza.jpg);
-}
 .page-header.grammars {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/pages/ccl-segovia.jpg);
+  background-position-y: -100px;
+  background-attachment: fixed;
 }
 .page-header.tema-words {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/pages/ccl-cordoba.jpg);
+  background-position-y: -200px;
+  background-attachment: fixed;
+}
+.page-header.download {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/pages/ccl-zaragoza.jpg);
+  background-position-y: -300px;
+  background-attachment: fixed;
 }
 
 .page-main-content {
@@ -952,13 +959,8 @@ hr {
 
 #tema-voca-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  #tema-voca-list {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 .btn-tema-voca {

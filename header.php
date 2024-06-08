@@ -11,6 +11,7 @@
     <meta property="og:title" content="카페콘레체 - 스페인어 독학하기" />
     <meta property="og:url" content="https://cafeconlecheesp.com" />
     <meta property="og:image" content="https://cafeconlecheesp.com/wp-content/themes/CCL2022/assets/images/social/wp-og-image-thumbnail.jpg" />
+    <meta name="google-site-verification" content="srxk2NcxFf9_sQWdSQurFrIOWcDXWLZwEmPtWiFAo5A" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
