@@ -29,6 +29,7 @@ Version: 2.0
     --btn-border-radius: 32px;
     --transition: 200ms;
     --bg-basic: hsl(0, 0%, 92%);
+    --c-page-title: #242424;
 
     // design
     --border: 1px solid blue;
@@ -82,6 +83,7 @@ body.dark {
     --b-meta-data: hsl(0, 0%, 44%);
     --sombra: 0 0 24px rgba(255, 255, 255, 0.1);
     --bg-basic: hsl(0, 0%, 12%);
+    --c-page-title: var(--c-white);
 }
 
 *,

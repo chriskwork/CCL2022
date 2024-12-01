@@ -9,58 +9,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    @include desktop {
-        height: 400px;
-    }
+    height: 160px;
 
     &-title {
-        color: var(--c-white);
-    }
-
-    &.grammars {
-        background-image: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            url(./assets/images/pages/ccl-segovia.jpg);
-
-        @include desktop {
-            background-position-y: -100px;
-            background-attachment: fixed;
-        }
-    }
-
-    &.tema-words {
-        background-image: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            url(./assets/images/pages/ccl-cordoba.jpg);
-
-        @include desktop {
-            background-position-y: -200px;
-            background-attachment: fixed;
-        }
-    }
-
-    &.download {
-        background-image: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-            ),
-            url(./assets/images/pages/ccl-zaragoza.jpg);
-        @include desktop {
-            background-position-y: -300px;
-            background-attachment: fixed;
-        }
+        color: var(--c-page-title);
     }
 }
 
@@ -71,21 +23,6 @@
     z-index: 2;
     padding: 40px 10px;
     position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 24px;
-        top: 0;
-        left: 0;
-        background-color: var(--c-bg);
-        border-radius: 30px 30px 0 0;
-        box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
-        -webkit-box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: 0px -16px 16px -8px rgba(0, 0, 0, 0.25);
-        z-index: 1;
-    }
 }
 
 // go back button style
@@ -121,15 +58,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 1px solid var(--c-grey3);
     padding: 20px 0;
     border-radius: 8px;
     transition: var(--transition);
     background-color: var(--c-card);
+    overflow: hidden;
+    position: relative;
 
-    &:hover {
-        border-color: var(--clr--main-dark);
-        background-color: rgba(0, 0, 0, 0.04);
+    &::after {
+        content: attr(data-tema);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-transform: uppercase;
+        width: 100%;
+        height: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--bg-basic);
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    &:hover:after {
+        height: 100%;
+        opacity: 1;
     }
 }
 
