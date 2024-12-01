@@ -29,8 +29,11 @@
                 rgba(0, 0, 0, 0.5)
             ),
             url(./assets/images/pages/ccl-segovia.jpg);
-        background-position-y: -100px;
-        background-attachment: fixed;
+
+        @include desktop {
+            background-position-y: -100px;
+            background-attachment: fixed;
+        }
     }
 
     &.tema-words {
@@ -40,8 +43,11 @@
                 rgba(0, 0, 0, 0.5)
             ),
             url(./assets/images/pages/ccl-cordoba.jpg);
-        background-position-y: -200px;
-        background-attachment: fixed;
+
+        @include desktop {
+            background-position-y: -200px;
+            background-attachment: fixed;
+        }
     }
 
     &.download {
@@ -51,8 +57,10 @@
                 rgba(0, 0, 0, 0.5)
             ),
             url(./assets/images/pages/ccl-zaragoza.jpg);
-        background-position-y: -300px;
-        background-attachment: fixed;
+        @include desktop {
+            background-position-y: -300px;
+            background-attachment: fixed;
+        }
     }
 }
 
