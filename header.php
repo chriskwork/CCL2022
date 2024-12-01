@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- meta tags -->
-    <meta name="description" content="스페인어 혼자 공부하신다고요? 제가 도와드릴게요." />
+    <meta name="description" content="스페인어를 독학하시는 분들께 도움이 될만한 자료들을 만들어서 누구나 볼 수 있도록 제공하고 있는 사이트입니다." />
     <meta name="keywords" content="스페인어, 스페인어표현, 스페인여행, 스페인어독학, 스페인일상, 원어민표현" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="카페콘레체 - 스페인어 독학하기" />

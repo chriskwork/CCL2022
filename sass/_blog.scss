@@ -104,13 +104,8 @@ form.post-search-form {
         height: 100%;
         object-fit: cover;
 
-        @include tablet {
-            filter: brightness(96%);
-
-            &:hover {
-                filter: brightness(100%);
-                transform: scale(1.1);
-            }
+        &:hover {
+            transform: scale(1.02);
         }
     }
 
@@ -132,7 +127,7 @@ form.post-search-form {
             transition: var(--transition);
 
             &:hover {
-                color: var(--c-point);
+                color: var(--c-sub-point);
             }
         }
 
@@ -142,15 +137,21 @@ form.post-search-form {
             }
 
             .blog-read-more-btn-box {
-                margin-top: 10px;
+                margin-top: 16px;
             }
 
             .blog-read-more-btn {
-                font-size: 14px;
-                font-weight: 600;
-                margin-top: 10px;
-                color: var(--c-point);
-                text-decoration: underline;
+                background-color: var(--c-sub-point);
+                font-size: 12px;
+                padding: 8px;
+                border-radius: 4px;
+                // font-weight: 600;
+
+                color: var(--c-white);
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -176,7 +177,7 @@ nav.pagination {
 
         .page-numbers.current {
             color: var(--c-point);
-            border: 1px solid var(--c-point);
+
             padding: 4px 8px;
             border-radius: 6px;
         }
@@ -311,7 +312,7 @@ hr {
     }
 
     .comments-inner {
-        background-color: #eef2ff;
+        background-color: var(--bg-basic);
         border-radius: 10px;
         padding: 2rem;
         font-size: 14px;

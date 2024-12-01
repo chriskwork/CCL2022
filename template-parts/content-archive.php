@@ -20,8 +20,10 @@
     <div class="blog-excerpt">
       <?php the_excerpt(); ?>
       <div class="blog-read-more-btn-box">
-        <span> &raquo; </span>
-        <a href="<?php the_permalink(); ?>" class="blog-read-more-btn">계속 읽기</a>
+        
+        <a href="<?php the_permalink(); ?>" class="blog-read-more-btn">
+        <span> &raquo; </span>  
+        계속 읽기</a>
       </div>
     </div>
   </div>

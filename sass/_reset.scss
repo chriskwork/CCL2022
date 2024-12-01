@@ -28,6 +28,7 @@ Version: 2.0
     --border-radius: 8px;
     --btn-border-radius: 32px;
     --transition: 200ms;
+    --bg-basic: hsl(0, 0%, 92%);
 
     // design
     --border: 1px solid blue;
@@ -50,7 +51,7 @@ body {
     --c-para: hsl(0, 0%, 40%);
     // --c-para: hsl(224, 22%, 52%);
     --c-point: hsl(27, 87%, 67%);
-    --c-sub-point: hsl(198, 28%, 43%);
+    --c-sub-point: hsl(198, 28%, 40%);
     --c-sub-point-light: hsl(198, 21%, 53%);
     --c-bg: hsl(0, 0%, 94%);
     --c-card: hsl(0, 0%, 98%);
@@ -74,12 +75,13 @@ body.dark {
     --c-point: hsl(27, 87%, 50%);
     --c-sub-point: hsl(198, 38%, 46%);
     --c-sub-point-light: hsl(198, 21%, 52%);
-    --c-bg: hsl(0, 0%, 14%);
-    --c-card: hsl(0, 0%, 8%);
+    --c-bg: hsl(0, 0%, 10%);
+    --c-card: hsl(0, 0%, 18%);
     --p-example: hsl(150, 68%, 56%);
     --p-table-border: hsl(0, 0%, 24%);
     --b-meta-data: hsl(0, 0%, 44%);
     --sombra: 0 0 24px rgba(255, 255, 255, 0.1);
+    --bg-basic: hsl(0, 0%, 12%);
 }
 
 *,

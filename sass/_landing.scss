@@ -75,15 +75,12 @@
 // ##### Card Section
 
 section.cards {
-    padding-bottom: 6rem;
-
-    @include tablet {
-        padding-bottom: 8rem;
-    }
-
-    @include desktop {
-        padding-bottom: 10%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+    padding: 6rem;
+    background-color: var(--bg-basic);
 }
 
 .ccl-cards {
@@ -115,11 +112,6 @@ section.cards {
         .ccl-card-text h4 {
             color: var(--c-sub-point);
             margin-bottom: 0.5rem;
-
-            a:hover,
-            a:active {
-                color: var(--c-point);
-            }
         }
 
         .ccl-card-text p {
